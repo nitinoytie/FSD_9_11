@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+        body{
+            background: rgb(238,174,202);
+            animation: body 2s linear alternate infinite;
+        }
+        @keyframes body {
+            0%{
+                background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            }
+            50%{
+                background: radial-gradient(circle, rgb(53, 253, 35) 0%, rgb(52, 136, 232) 100%);
+         
+            }
+            100%{
+                background: radial-gradient(circle, rgb(255, 0, 225) 0%, rgb(241, 252, 15) 100%);
+         
+            }
+
+        }
+        .gallarybox{
+            display: grid;
+            height: 100vh;
+            justify-content: space-evenly;
+            gap: 10px;
+            grid-template-columns: auto auto auto;
+            
+        }
+        .gallaryimg{
+            /* border: 2px solid blue; */
+            box-shadow: 0 3px 5px black;
+            background-color: yellow;
+            width: 220px;
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+      }
+      .gallaryimg:nth-child(1){
+        background-image: url("https://img.freepik.com/premium-photo/picture-planet-with-trees-it_579873-1170.jpg");
+      
+      }
+        .gallaryimg:nth-child(2){
+            grid-column: 3;
+            grid-row: 1;
+            border-radius: 50%;
+            background-image: url("https://img.freepik.com/free-photo/floating-civilization-sky_23-2150461605.jpg?w=360");
+        }
+        .gallaryimg:nth-child(3){
+            grid-column: 2;
+            grid-row: 2;
+            background-image: url("https://img.freepik.com/premium-photo/3d-image-floating-tropical-island-shape_665280-6957.jpg");
+        }   
+        .gallaryimg:nth-child(4){
+            grid-column: 1;
+            grid-row: 3;
+            border-radius: 50%;
+            background-image: url("https://images.unsplash.com/photo-1570168007204-dfb528c6958f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80");
+           
+        }
+        .gallaryimg:nth-child(4):hover{
+            animation: abc 1s forwards linear infinite;
+        }
+        @keyframes abc {
+           
+            to{
+                /* margin-top: 10px; */
+                transform: rotate(360deg);
+            }
+        }
+        .gallaryimg:nth-child(5){
+            grid-column: 3;
+            grid-row: 3;
+            background-image: url("https://wallpapers.com/images/hd/mumbai-rainbow-gateway-j1szvjf2x2mifpqy.jpg");
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="gallarybox">
+        <div class="gallaryimg"></div>
+        <div class="gallaryimg animate__animated animate__swing animate__infinite	infinite"></div>
+        <div class="gallaryimg animate__animated animate__flash animate__infinite	infinite"></div>
+        <div class="gallaryimg"></div>
+        <div class="gallaryimg"></div>
+    </div>
+</body>
+</html>

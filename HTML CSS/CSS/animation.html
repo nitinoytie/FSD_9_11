@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --abc:red;
+        }
+        h1{
+            color: var(--abc);
+        }
+        @property --num {
+            syntax: '<integer>';
+            inherits: true;
+            initial-value: 0;
+        }
+
+        div::before {
+            counter-reset: my-counter var(--num);
+            content: counter(my-counter);
+            animation: count 10s ease-in-out infinite;
+        }
+
+        @keyframes count {
+            to {
+                --num: 100;
+            }
+        }
+
+        /* everything below is for demo appearances and not important to the concept */
+
+        body {
+            box-sizing: border-box;
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #556270;
+            background-image: linear-gradient(-45deg, #c5e0dc, #dcedc2);
+            font-size: 55px;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    
+</body>
+
+</html>

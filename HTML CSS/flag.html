@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flag{
+            margin-left: 200px;
+            /* border: 2px solid black; */
+        }
+        .saffron,.white,.green{
+            width: 60%;
+            height: 150px;
+            background-color: #FF671F;
+        }
+        .saffron{
+            animation: cl 1s ease-in-out alternate infinite;
+        }
+        @keyframes cl {
+            0%{
+                background-color: #FF671F;
+            }
+            100%{
+                background-color: #e4723e;
+            }
+        }
+        .white{
+            background-color: #FFFFFF;
+            position: relative; 
+        }
+        .green{
+            background-color: #046A38;
+        }
+        .cen{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .cen img{
+            animation: abc 200ms forwards ease-out infinite;
+        }
+        hr{
+            transform: rotate(180deg);
+            border: 5px solid black;
+            position: absolute;
+            height: 800px;
+            top: 0px;
+            left: 200px;
+        }
+        @keyframes abc {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="flag">
+        <div class="saffron">
+
+        </div>
+        <div class="white">
+            <div class="cen">
+                <img width="150" src="https://www.freeiconspng.com/thumbs/ashoka-chakra-png/ashoka-chakra-png-transparent-image-0.png" alt="">
+            </div>
+        </div>
+        <div class="green">
+
+        </div>
+    </div>
+    <hr>
+</body>
+</html>

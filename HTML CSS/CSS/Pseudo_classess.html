@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    a:link{
+        color: aqua;
+    }
+    a:visited{
+        color: brown;
+    }
+    a:active{
+        color: yellow;
+    }
+    h1::after,h1::before{
+        content: "";
+        width: 200px;
+        height: 200px;
+        color: red;
+        margin: 0 10px;
+        background: url('gym-hero-img.png') 
+                no-repeat center center/cover;
+            position: absolute;
+    }
+
+   blockquote::before{
+    content: open-quote;
+   }
+   blockquote::after{
+    content: close-quote;
+   }
+
+   blockquote::before, blockquote::after {
+  opacity: 0.25;
+  padding: 0 10px;
+  font-size: 3em;
+}
+blockquote{
+    display: flex;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+li::marker {
+  content: '🧁';
+}
+input:disabled{
+
+}
+input:focus{
+    background-color: cornflowerblue;
+    cursor: progress;
+}
+input:checked{
+    
+    width: 40px; 
+    height: 40px;
+    color: greenyellow;
+    position: absolute;
+    left: 6px;
+    background: green;
+}
+input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+    </style>
+</head>
+<body>
+    <a href="ABC.html">Home</a>
+
+    <input type="text">
+
+   
+
+    <!-- <h1>Welcome</h1> -->
+
+    <blockquote>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nobis, labore inventore provident, officia exercitationem incidunt possimus quis modi quod nemo. Nostrum odit voluptas eum aperiam maiores quod nam natus.</p>
+    </blockquote>
+
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet minus similique, porro atque nisi incidunt, id ut, praesentium suscipit vero veritatis earum. Quasi, eveniet facere maiores incidunt inventore ullam quam?</li>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet minus similique, porro atque nisi incidunt, id ut, praesentium suscipit vero veritatis earum. Quasi, eveniet facere maiores incidunt inventore ullam quam?</li>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet minus similique, porro atque nisi incidunt, id ut, praesentium suscipit vero veritatis earum. Quasi, eveniet facere maiores incidunt inventore ullam quam?</li>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet minus similique, porro atque nisi incidunt, id ut, praesentium suscipit vero veritatis earum. Quasi, eveniet facere maiores incidunt inventore ullam quam?</li>
+</body>
+</html>

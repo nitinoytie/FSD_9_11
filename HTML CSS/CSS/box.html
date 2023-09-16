@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .out{
+            width: 100%;
+            padding: 50px 0px;
+            background-color: aqua;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+
+        }
+        .left,.right{
+            width: 40%;
+            height: 500px;
+            /* border: 2px solid black; */
+        }
+        .imgbox,.img{
+           width: 200px;
+           height: 200px;
+           /* border: 2px solid red; */
+           box-shadow: 0px 3px 5px black;
+           background-color: blueviolet;
+        }
+        .img{
+            background-image: url("gym-hero-img.png");
+            background-size: cover;
+            background-position: center;
+            opacity: 0.7;
+        }
+
+        .imgbox2{
+            position: absolute;
+            top: 180px;
+            left: 250px;
+        }
+        .imgbox3{
+            position: absolute;
+            top: 320px;
+            left: 100px;
+        }
+        .imgbox1{
+            position: absolute;
+            z-index: 9999;
+        }
+        .imgbox2{
+            z-index: 2;
+        }
+        .imgbox3{
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="left">
+            <div class="imgbox imgbox1">
+                <div class="img img1">1</div>
+            </div>
+            <div class="imgbox imgbox2">
+                <div class="img img2">2</div>
+            </div>
+            <div class="imgbox imgbox3">
+                <div class="img img3">3</div>
+            </div>
+        </div>
+        <div class="right">
+            <h1>Many Business, One Solution.</h1>
+            <p>Need Something from Training, Staffing/ Placement, and Projects?
+                </p>
+                <p>No Worries! We Got You!</p>
+               
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,4282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    </head>
+    <style>
+        table,tr,th,td{
+            border: 2px solid black;
+        }
+    </style>
+<body>
+    <div>
+        <article class="article-content"> 
+            <!--?xml encoding="utf-8" ?--><p><br>
+            </p>
+            <p>Bootstrap</p>
+            <ul>
+            <li>The free and open-source CSS framework</li>
+            <li>Contains HTML and CSS based design templates for buttons, forms, typography, navigation</li>
+            <li>Supports JavaScript plugins</li>
+            <li>Used to make faster and more responsive websites that are mobile-friendly</li>
+            <li>Lightweight and has an extensive list of components</li>
+            </ul>
+            <h2 id="bootstrap-cheat-sheet">Bootstrap Cheat Sheet</h2>
+            <h3 id="features-of-bootstrap">Features of Bootstrap</h3>
+            <ul>
+            <li>Very few or no cross-browser issues and incompatibilities</li>
+            <li>Customizable and easy to use</li>
+            <li>Powerful grid system</li>
+            <li>Simple integration</li>
+            <li>Good community support and documentation</li>
+            <li>Pre-styled components</li>
+            <li>Easy to learn and use</li>
+            </ul>
+            <h3 id="bootstrap-alerts">Bootstrap Alerts</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>Tag name</p>
+            </td>
+            <td>
+            <p>Description</p>
+            </td>
+            <td>
+            <p>Example</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>alert-primary</p>
+            </td>
+            <td>
+            <pre>&lt;div class="alert alert-primary" role="alert"&gt;<br>Text message to be displayed<br>&lt;/div&gt;</pre>
+            </td>
+            <td>
+            <p>Text message to be displayed.&nbsp;</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>alert-secondary</p>
+            </td>
+            <td>
+            <pre>&lt;div class="alert alert-secondary" role="alert"&gt;<br>Text message to be displayed<br>&lt;/div&gt;</pre>
+            </td>
+            <td>
+            <p>Text message to be displayed.&nbsp;</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>alert-success</p>
+            </td>
+            <td>
+            <pre>&lt;div class="alert alert-success" role="alert"&gt;<br>Success text to be displayed<br>&lt;/div&gt;</pre>
+            </td>
+            <td>
+            <p>Success message to be displayed.</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>alert-info</p>
+            </td>
+            <td>
+            <pre>&lt;div class="alert alert-info" role="alert"&gt;<br>Info message to be displayed<br>&lt;/div&gt;</pre>
+            </td>
+            <td>
+            <p>Info message to be displayed</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>alert-warning</p>
+            </td>
+            <td>
+            <pre>&lt;div class="alert alert-warning" role="alert"&gt;<br>Warning message to be displayed<br>&lt;/div&gt;</pre>
+            </td>
+            <td>
+            <p>Warning message to be displayed</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>alert-danger</p>
+            </td>
+            <td>
+            <pre>&lt;div class="alert alert-danger" role="alert"&gt;<br>Error message to be displayed, something really went wrong<br>&lt;/div&gt;</pre>
+            </td>
+            <td>
+            <p>Error message to be displayed, something really went wrong</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>alert-light</p>
+            </td>
+            <td>
+            <pre>&lt;div class="alert alert-light" role="alert"&gt;<br>Light font and style to display alert&lt;/div&gt;</pre>
+            </td>
+            <td>
+            <p>Light font and style to display alert</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>alert-dark</p>
+            </td>
+            <td>
+            <pre>&lt;div class="alert alert-dark" role="alert"&gt;<br>Dark font and style to display alert message<br>&lt;/div&gt;</pre>
+            </td>
+            <td>
+            <p>Dark font and style to display alert message</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>alert-link</p>
+            </td>
+            <td>
+            <p>Add a link in the alert class</p>
+            <pre>&lt;div class="alert alert-dark" role="alert"&gt;<br> &nbsp;&lt;a href="#!" class="alert-link"&gt;I am an alert link&lt;/a&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            <td>
+            <p>I am an alert link</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>alert-dismissible</p>
+            </td>
+            <td>
+            <pre>&lt;div class="alert alert-info alert-dismissible"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;a href="#" class="close" data-dismiss="alert" aria-label="close"&gt;&amp;times;&lt;/a&gt;<br> &nbsp;&nbsp;&nbsp;Alert message with dismissible (closing) link<br>&nbsp;&nbsp;&lt;/div&gt;</pre>
+            <p>can be used with any other alert class like info, success, danger etc for styling</p>
+            </td>
+            <td>
+            <p>Alert message with dismissible (closing) link &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_alerts_dismissible&amp;stacked=h" target="_blank" rel="noopener">×</a>&nbsp;</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>alert-heading</p>
+            </td>
+            <td>
+            <pre>&lt;h4 class="alert-heading"&gt;Alert success with heading&lt;/h4&gt;</pre>
+            <p>can be used with any other alert class like info, success, danger etc for styling</p>
+            </td>
+            <td>
+            <p>Alert success with heading</p>
+            </td>
+            </tr>
+            </tbody>
+            </table></div><div id="cls-video-container-OtJqGFLy" class="adthrive" style="min-height: 351px;"><div class="adthrive-player-container adthrive-collapse-player" id="adthrive-collapse-container" style="height: 337px;"><div class="adthrive-player-position adthrive-player-without-wrapper-text" id="adthrive-collapse-position" style=""><div class="adthrive-wrapper-float-close adthrive-instream-close adthrive-top-left-outer adthrive-float-left" id="adthrive-collapse-close" style="display: none;"><svg width="18" height="18" fill="white"><path d="M 0.5 9 A 5 5 0 0 0 17.5 9 A 5 5 0 0 0 0.5 9 M 9 9 L 7 7 L 11 11 M 9 9 L 7 11 L 11 7" stroke="black" stroke-width="1"></path></svg></div><div id="OtJqGFLy" class="jwplayer jw-reset jw-state-paused jw-stretch-uniform jw-flag-aspect-mode jw-breakpoint-3 jw-flag-ads-googleima jw-flag-ads jw-flag-user-inactive" tabindex="0" aria-label="Video Player" role="application" style="" aria-describedby="jw-OtJqGFLy-shortcuts-tooltip-explanation"><div class="jw-aspect jw-reset" style="padding-top: 56.25%;"></div><div class="jw-wrapper jw-reset" style="will-change: auto;"><div style="opacity: 0; visibility: hidden; overflow: hidden; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><div style="overflow: auto; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"><div style="height: 1px; width: 547px;"></div></div><div class="jw-contract-trigger" style="overflow: auto; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></div></div><div class="jw-top jw-reset"></div><div class="jw-aspect jw-reset" style="padding-top: 56.25%;"></div><div class="jw-media jw-reset"><video class="jw-video jw-reset" tabindex="-1" disableremoteplayback="" webkit-playsinline="" playsinline=""></video></div><div class="jw-preview jw-reset" style="background-image: url(&quot;https://cdn.jwplayer.com/v2/media/biqCvWxi/poster.jpg?width=640&quot;); background-size: cover;"></div><div class="jw-captions jw-reset jw-captions-enabled" style="font-size: 16px;"><div class="jw-captions-window jw-reset"><span class="jw-captions-text jw-reset"></span></div></div><div class="jw-title jw-reset-text" dir="auto"><div class="jw-title-primary jw-reset-text">Looking for a DevOps job? You'll need these 12 skills.</div><div class="jw-title-secondary jw-reset-text">Learn these 12 DevOps skills to land a job in the field this year.</div></div><div class="jw-overlays jw-reset"><div id="OtJqGFLy_googima" class="jw-plugin jw-reset jw-plugin-googima jw-ad-instream jw-ad-linear"><div id="OtJqGFLy_ad" class="jw-ads-view"><div style="position: absolute; width: 546px; height: 307px;"><div style="display: block;"><video title="Advertisement" webkit-playsinline="true" playsinline="true" style="background-color: rgb(0, 0, 0); position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;" src="https://gcdn.2mdn.net/videoplayback/id/3230be43c8ce6d1c/itag/22/source/web_video_ads/ctier/L/acao/yes/ip/0.0.0.0/ipbits/0/expire/3838027308/sparams/id,itag,source,ctier,acao,ip,ipbits,expire/signature/5016883C4324F4A90194D36DC10684F5B45F7387.41B8C109B0BE3ACC3FAB2A6C4E8938E079842AAF/key/ck2/file/file.mp4?cpn=wH0h76JDVfkaZRH9"></video><div style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;"></div></div><div style="display: none;"><video title="Advertisement" webkit-playsinline="true" playsinline="true" style="background-color: rgb(0, 0, 0); position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;"></video><div style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;"></div></div><iframe src="https://imasdk.googleapis.com/js/core/bridge3.589.0_en.html#goog_1800764572" allowfullscreen="" allow="autoplay" id="goog_1800764572" style="border: 0px; opacity: 1; margin: 0px; padding: 0px; position: relative; color-scheme: light;" width="546" height="307"></iframe><iframe sandbox="allow-scripts allow-same-origin" style="display: none;"></iframe></div></div></div><div id="OtJqGFLy_jwpsrv" class="jw-plugin jw-reset"></div><div id="OtJqGFLy_related" class="jw-plugin jw-reset jw-plugin-related"><div class="jw-reset jw-related jw-overlay"><div class="jw-reset jw-icon jw-icon-inline jw-related-close jw-button-color" role="button" tabindex="0" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-close" viewBox="0 0 240 240" focusable="false"><path d="M134.8,120l48.6-48.6c2-1.9,2.1-5.2,0.2-7.2c0,0-0.1-0.1-0.2-0.2l-7.4-7.4c-1.9-2-5.2-2.1-7.2-0.2c0,0-0.1,0.1-0.2,0.2L120,105.2L71.4,56.6c-1.9-2-5.2-2.1-7.2-0.2c0,0-0.1,0.1-0.2,0.2L56.6,64c-2,1.9-2.1,5.2-0.2,7.2c0,0,0.1,0.1,0.2,0.2l48.6,48.7l-48.6,48.6c-2,1.9-2.1,5.2-0.2,7.2c0,0,0.1,0.1,0.2,0.2l7.4,7.4c1.9,2,5.2,2.1,7.2,0.2c0,0,0.1-0.1,0.2-0.2l48.7-48.6l48.6,48.6c1.9,2,5.2,2.1,7.2,0.2c0,0,0.1-0.1,0.2-0.2l7.4-7.4c2-1.9,2.1-5.2,0.2-7.2c0,0-0.1-0.1-0.2-0.2L134.8,120z"></path></svg></div><div class="jw-reset jw-icon jw-icon-inline jw-related-page jw-related-page-left jw-button-color" role="button" tabindex="0" aria-label="Previous"><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-arrow-left" viewBox="0 0 240 240" focusable="false"><path d="M55.4,104.4c-1.1,1.1-2.2,2.3-3.1,3.6c-6.9,9.9-4.4,23.5,5.5,30.4L159.7,240l33.9-33.9l-84.9-84.9l84.9-84.9L157.3,0L55.4,104.4L55.4,104.4z"></path></svg></div><div class="jw-related-title jw-reset-text" aria-label="More Videos" dir="auto">More Videos</div><div class="jw-reset jw-related-container"><div class="jw-reset jw-related-item-group"></div></div><div class="jw-reset jw-icon jw-icon-inline jw-related-page jw-related-page-right jw-button-color" role="button" tabindex="0" aria-label="Next"><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-arrow-right" viewBox="0 0 240 240" focusable="false"><path d="M183.6,104.4L81.8,0L45.4,36.3l84.9,84.9l-84.9,84.9L79.3,240l101.9-101.7c9.9-6.9,12.4-20.4,5.5-30.4C185.8,106.7,184.8,105.4,183.6,104.4L183.6,104.4z"></path></svg></div></div></div></div><div class="jw-hidden-accessibility"><span class="jw-time-update" aria-live="assertive">0 seconds of 30 seconds</span><span class="jw-volume-update" aria-live="assertive">Volume 0%</span></div><div class="jw-shortcuts-tooltip jw-modal jw-reset" title="Keyboard Shortcuts"><div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-shortcuts-close" role="button" tabindex="0" aria-label="Close" style=""><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-close" viewBox="0 0 240 240" focusable="false"><path d="M134.8,120l48.6-48.6c2-1.9,2.1-5.2,0.2-7.2c0,0-0.1-0.1-0.2-0.2l-7.4-7.4c-1.9-2-5.2-2.1-7.2-0.2c0,0-0.1,0.1-0.2,0.2L120,105.2L71.4,56.6c-1.9-2-5.2-2.1-7.2-0.2c0,0-0.1,0.1-0.2,0.2L56.6,64c-2,1.9-2.1,5.2-0.2,7.2c0,0,0.1,0.1,0.2,0.2l48.6,48.7l-48.6,48.6c-2,1.9-2.1,5.2-0.2,7.2c0,0,0.1,0.1,0.2,0.2l7.4,7.4c1.9,2,5.2,2.1,7.2,0.2c0,0,0.1-0.1,0.2-0.2l48.7-48.6l48.6,48.6c1.9,2,5.2,2.1,7.2,0.2c0,0,0.1-0.1,0.2-0.2l7.4-7.4c2-1.9,2.1-5.2,0.2-7.2c0,0-0.1-0.1-0.2-0.2L134.8,120z"></path></svg></div><span class="jw-hidden" id="jw-OtJqGFLy-shortcuts-tooltip-explanation">Press shift question mark to access a list of keyboard shortcuts</span><div class="jw-reset jw-shortcuts-container"><div class="jw-reset jw-shortcuts-header"><span class="jw-reset jw-shortcuts-title">Keyboard Shortcuts</span><button role="switch" aria-label="Keyboard Shortcuts" class="jw-reset jw-switch"><span class="jw-reset jw-switch-knob"></span><span class="jw-reset-text jw-switch-enabled">Enabled</span><span class="jw-reset-text jw-switch-disabled">Disabled</span></button></div><div class="jw-reset jw-shortcuts-tooltip-list"><div class="jw-shortcuts-tooltip-descriptions jw-reset"><div class="jw-shortcuts-row jw-reset"><span class="jw-shortcuts-description jw-reset">Play/Pause</span><span class="jw-shortcuts-key jw-reset">SPACE</span></div><div class="jw-shortcuts-row jw-reset"><span class="jw-shortcuts-description jw-reset">Increase Volume</span><span class="jw-shortcuts-key jw-reset">↑</span></div><div class="jw-shortcuts-row jw-reset"><span class="jw-shortcuts-description jw-reset">Decrease Volume</span><span class="jw-shortcuts-key jw-reset">↓</span></div><div class="jw-shortcuts-row jw-reset"><span class="jw-shortcuts-description jw-reset">Seek Forward</span><span class="jw-shortcuts-key jw-reset">→</span></div><div class="jw-shortcuts-row jw-reset"><span class="jw-shortcuts-description jw-reset">Seek Backward</span><span class="jw-shortcuts-key jw-reset">←</span></div><div class="jw-shortcuts-row jw-reset"><span class="jw-shortcuts-description jw-reset">Captions On/Off</span><span class="jw-shortcuts-key jw-reset">c</span></div><div class="jw-shortcuts-row jw-reset"><span class="jw-shortcuts-description jw-reset">Fullscreen/Exit Fullscreen</span><span class="jw-shortcuts-key jw-reset">f</span></div><div class="jw-shortcuts-row jw-reset"><span class="jw-shortcuts-description jw-reset">Mute/Unmute</span><span class="jw-shortcuts-key jw-reset">m</span></div><div class="jw-shortcuts-row jw-reset"><span class="jw-shortcuts-description jw-reset">Seek %</span><span class="jw-shortcuts-key jw-reset">0-9</span></div></div></div></div></div><div class="jw-controls-backdrop jw-reset"></div><div class="jw-controls jw-reset"><div class="jw-display jw-reset"><div class="jw-display-container jw-reset"><div class="jw-display-controls jw-reset"><div class="jw-display-icon-container jw-display-icon-rewind jw-reset"><div class="jw-icon jw-icon-rewind jw-button-color jw-reset" role="button" tabindex="0" aria-label="Rewind 10 Seconds"><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-rewind" viewBox="0 0 240 240" focusable="false"><path d="M113.2,131.078a21.589,21.589,0,0,0-17.7-10.6,21.589,21.589,0,0,0-17.7,10.6,44.769,44.769,0,0,0,0,46.3,21.589,21.589,0,0,0,17.7,10.6,21.589,21.589,0,0,0,17.7-10.6,44.769,44.769,0,0,0,0-46.3Zm-17.7,47.2c-7.8,0-14.4-11-14.4-24.1s6.6-24.1,14.4-24.1,14.4,11,14.4,24.1S103.4,178.278,95.5,178.278Zm-43.4,9.7v-51l-4.8,4.8-6.8-6.8,13-13a4.8,4.8,0,0,1,8.2,3.4v62.7l-9.6-.1Zm162-130.2v125.3a4.867,4.867,0,0,1-4.8,4.8H146.6v-19.3h48.2v-96.4H79.1v19.3c0,5.3-3.6,7.2-8,4.3l-41.8-27.9a6.013,6.013,0,0,1-2.7-8,5.887,5.887,0,0,1,2.7-2.7l41.8-27.9c4.4-2.9,8-1,8,4.3v19.3H209.2A4.974,4.974,0,0,1,214.1,57.778Z"></path></svg></div></div><div class="jw-display-icon-container jw-display-icon-display jw-reset"><div class="jw-icon jw-icon-display jw-button-color jw-reset" role="button" tabindex="0" aria-label="Play"><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-buffer" viewBox="0 0 240 240" focusable="false"><path d="M120,186.667a66.667,66.667,0,0,1,0-133.333V40a80,80,0,1,0,80,80H186.667A66.846,66.846,0,0,1,120,186.667Z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-replay" viewBox="0 0 240 240" focusable="false"><path d="M120,41.9v-20c0-5-4-8-8-4l-44,28a5.865,5.865,0,0,0-3.3,7.6A5.943,5.943,0,0,0,68,56.8l43,29c5,4,9,1,9-4v-20a60,60,0,1,1-60,60H40a80,80,0,1,0,80-79.9Z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-play" viewBox="0 0 240 240" focusable="false"><path d="M62.8,199.5c-1,0.8-2.4,0.6-3.3-0.4c-0.4-0.5-0.6-1.1-0.5-1.8V42.6c-0.2-1.3,0.7-2.4,1.9-2.6c0.7-0.1,1.3,0.1,1.9,0.4l154.7,77.7c2.1,1.1,2.1,2.8,0,3.8L62.8,199.5z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-pause" viewBox="0 0 240 240" focusable="false"><path d="M100,194.9c0.2,2.6-1.8,4.8-4.4,5c-0.2,0-0.4,0-0.6,0H65c-2.6,0.2-4.8-1.8-5-4.4c0-0.2,0-0.4,0-0.6V45c-0.2-2.6,1.8-4.8,4.4-5c0.2,0,0.4,0,0.6,0h30c2.6-0.2,4.8,1.8,5,4.4c0,0.2,0,0.4,0,0.6V194.9z M180,45.1c0.2-2.6-1.8-4.8-4.4-5c-0.2,0-0.4,0-0.6,0h-30c-2.6-0.2-4.8,1.8-5,4.4c0,0.2,0,0.4,0,0.6V195c-0.2,2.6,1.8,4.8,4.4,5c0.2,0,0.4,0,0.6,0h30c2.6,0.2,4.8-1.8,5-4.4c0-0.2,0-0.4,0-0.6V45.1z"></path></svg></div></div><div class="jw-display-icon-container jw-display-icon-next jw-reset" style=""><div class="jw-icon jw-icon-next jw-button-color jw-reset" role="button" tabindex="0" aria-label="Next"><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-next" viewBox="0 0 240 240" focusable="false"><path d="M165,60v53.3L59.2,42.8C56.9,41.3,55,42.3,55,45v150c0,2.7,1.9,3.8,4.2,2.2L165,126.6v53.3h20v-120L165,60L165,60z"></path></svg></div></div></div></div></div><div class="jw-nextup-container jw-reset"><div class="jw-nextup jw-background-color jw-reset jw-nextup-thumbnail-visible"><div class="jw-nextup-tooltip jw-reset"><div class="jw-nextup-thumbnail jw-reset" style="background-image: url(&quot;https://cdn.jwplayer.com/v2/media/NBbUFJGO/poster.jpg?width=120&quot;);"></div><div class="jw-nextup-body jw-reset"><div class="jw-nextup-header jw-reset">Next Up</div><div class="jw-nextup-title jw-reset-text" dir="auto">10 Best Cybersec Certifications</div><div class="jw-nextup-duration jw-reset">00:36</div></div></div><button type="button" class="jw-icon jw-nextup-close jw-reset" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-close" viewBox="0 0 240 240" focusable="false"><path d="M134.8,120l48.6-48.6c2-1.9,2.1-5.2,0.2-7.2c0,0-0.1-0.1-0.2-0.2l-7.4-7.4c-1.9-2-5.2-2.1-7.2-0.2c0,0-0.1,0.1-0.2,0.2L120,105.2L71.4,56.6c-1.9-2-5.2-2.1-7.2-0.2c0,0-0.1,0.1-0.2,0.2L56.6,64c-2,1.9-2.1,5.2-0.2,7.2c0,0,0.1,0.1,0.2,0.2l48.6,48.7l-48.6,48.6c-2,1.9-2.1,5.2-0.2,7.2c0,0,0.1,0.1,0.2,0.2l7.4,7.4c1.9,2,5.2,2.1,7.2,0.2c0,0,0.1-0.1,0.2-0.2l48.7-48.6l48.6,48.6c1.9,2,5.2,2.1,7.2,0.2c0,0,0.1-0.1,0.2-0.2l7.4-7.4c2-1.9,2.1-5.2,0.2-7.2c0,0-0.1-0.1-0.2-0.2L134.8,120z"></path></svg></button></div></div><div id="jw-OtJqGFLy-settings-menu" class="jw-reset jw-settings-menu" aria-expanded="false"><div class="jw-reset jw-settings-topbar"><div class="jw-reset jw-settings-topbar-text" tabindex="0"></div><div class="jw-reset jw-settings-topbar-buttons"><div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-settings-quality jw-submenu-quality" role="button" tabindex="0" aria-label="Quality" name="quality" type="button" aria-expanded="false" aria-controls="jw-OtJqGFLy-settings-submenu-quality" style=""><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-quality-100" viewBox="0 0 240 240" focusable="false"><path d="M55,200H35c-3,0-5-2-5-4c0,0,0,0,0-1v-30c0-3,2-5,4-5c0,0,0,0,1,0h20c3,0,5,2,5,4c0,0,0,0,0,1v30C60,198,58,200,55,200L55,200z M110,195v-70c0-3-2-5-4-5c0,0,0,0-1,0H85c-3,0-5,2-5,4c0,0,0,0,0,1v70c0,3,2,5,4,5c0,0,0,0,1,0h20C108,200,110,198,110,195L110,195z M160,195V85c0-3-2-5-4-5c0,0,0,0-1,0h-20c-3,0-5,2-5,4c0,0,0,0,0,1v110c0,3,2,5,4,5c0,0,0,0,1,0h20C158,200,160,198,160,195L160,195z M210,195V45c0-3-2-5-4-5c0,0,0,0-1,0h-20c-3,0-5,2-5,4c0,0,0,0,0,1v150c0,3,2,5,4,5c0,0,0,0,1,0h20C208,200,210,198,210,195L210,195z"></path></svg><div class="jw-reset-text jw-tooltip jw-tooltip-quality" dir="auto"><div class="jw-text"></div></div></div><div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-settings-sharing jw-submenu-sharing" role="button" tabindex="0" aria-label="Share My Videos!" name="sharing" type="button" aria-expanded="false" aria-controls="jw-OtJqGFLy-settings-submenu-sharing" style=""><svg class="jw-svg-icon jw-svg-icon-sharing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" focusable="false"><path d="M175,160c-6.9,0.2-13.6,2.6-19,7l-62-39c0.8-2.6,1.2-5.3,1-8c0.2-2.7-0.2-5.4-1-8l62-39c5.4,4.4,12.1,6.8,19,7c16.3,0.3,29.7-12.6,30-28.9c0-0.4,0-0.7,0-1.1c0-16.5-13.5-30-30-30s-30,13.5-30,30c-0.2,2.7,0.2,5.4,1,8L84,97c-5.4-4.4-12.1-6.8-19-7c-16.5,0-30,13.5-30,30s13.5,30,30,30c6.9-0.2,13.6-2.6,19-7l62,39c-0.8,2.6-1.2,5.3-1,8c0,16.5,13.5,30,30,30s30-13.5,30-30S191.6,160,175,160z"></path></svg><div class="jw-reset-text jw-tooltip jw-tooltip-sharing" dir="auto"><div class="jw-text"></div></div></div><div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-settings-close" role="button" tabindex="0" aria-label="Close" style=""><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-close" viewBox="0 0 240 240" focusable="false"><path d="M134.8,120l48.6-48.6c2-1.9,2.1-5.2,0.2-7.2c0,0-0.1-0.1-0.2-0.2l-7.4-7.4c-1.9-2-5.2-2.1-7.2-0.2c0,0-0.1,0.1-0.2,0.2L120,105.2L71.4,56.6c-1.9-2-5.2-2.1-7.2-0.2c0,0-0.1,0.1-0.2,0.2L56.6,64c-2,1.9-2.1,5.2-0.2,7.2c0,0,0.1,0.1,0.2,0.2l48.6,48.7l-48.6,48.6c-2,1.9-2.1,5.2-0.2,7.2c0,0,0.1,0.1,0.2,0.2l7.4,7.4c1.9,2,5.2,2.1,7.2,0.2c0,0,0.1-0.1,0.2-0.2l48.7-48.6l48.6,48.6c1.9,2,5.2,2.1,7.2,0.2c0,0,0.1-0.1,0.2-0.2l7.4-7.4c2-1.9,2.1-5.2,0.2-7.2c0,0-0.1-0.1-0.2-0.2L134.8,120z"></path></svg></div></div></div><div id="jw-OtJqGFLy-settings-submenu-sharing" class="jw-reset jw-settings-submenu jw-settings-submenu-sharing jw-sharing-menu" role="menu" aria-expanded="false"><div class="jw-reset jw-settings-submenu-items"><button class="jw-reset jw-settings-content-item jw-sharing-link" aria-checked="false" type="button" role="button" aria-label="facebook" tabindex="0"><svg class="jw-svg-icon jw-svg-icon-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" focusable="false"><path d="M137.8,15H22.1A7.127,7.127,0,0,0,15,22.1V137.8a7.28,7.28,0,0,0,7.1,7.2H84.5V95H67.6V75.5H84.5v-15a23.637,23.637,0,0,1,21.3-25.9,28.08,28.08,0,0,1,4.1-.1c7.2,0,13.7.6,14.9.6V52.7H114.4c-8.5,0-9.7,3.9-9.7,9.7V74.7h19.5l-2.6,19.5H104.7v50.7h33.1a7.3,7.3,0,0,0,7.2-7.2V22A7.13,7.13,0,0,0,137.8,15Z"></path></svg> facebook</button><button class="jw-reset jw-settings-content-item jw-sharing-link" aria-checked="false" type="button" role="button" aria-label="twitter" tabindex="0"><svg class="jw-svg-icon jw-svg-icon-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" focusable="false"><path d="M56.8,132.5a75.177,75.177,0,0,0,75.3-75.1V54A53.405,53.405,0,0,0,145,40.5a58.075,58.075,0,0,1-15.4,3.9,27.138,27.138,0,0,0,11.6-14.8A53.038,53.038,0,0,1,124.5,36a25.736,25.736,0,0,0-19.3-8.4A26.12,26.12,0,0,0,78.8,53.4V54a16.5,16.5,0,0,0,.7,5.8,71.966,71.966,0,0,1-54.1-27,23.9,23.9,0,0,0-3.9,13.5A26.043,26.043,0,0,0,33.1,68.2,27.018,27.018,0,0,1,20.9,65v.7A26.15,26.15,0,0,0,42.1,91.4a24.149,24.149,0,0,1-7.1.7,12.625,12.625,0,0,1-5.1-.7,25.657,25.657,0,0,0,24.5,18A53.519,53.519,0,0,1,21.6,121a19.683,19.683,0,0,1-6.4-.7,80.388,80.388,0,0,0,41.6,12.2"></path></svg> twitter</button><button class="jw-reset jw-settings-content-item jw-sharing-link" aria-checked="false" type="button" role="button" aria-label="email" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-email" viewBox="0 0 160 160" focusable="false"><path d="M147.3,27.9H11.9L10,29.8v97a3.02,3.02,0,0,0,2.8,3.2H146.6a3.02,3.02,0,0,0,3.2-2.8V31C150.5,29.2,149.2,27.9,147.3,27.9ZM125.6,40.7,80.3,77.1,35,40.7Zm12.1,76.6H22.8V47.7l57.5,46,57.5-46-.1,69.6Z"></path></svg> Email</button><button class="jw-reset jw-settings-content-item jw-sharing-link" aria-checked="false" type="button" role="button" aria-label="pinterest" tabindex="0"><svg class="jw-svg-icon jw-svg-icon-pinterest" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" focusable="false"><path d="M80,15A65.127,65.127,0,0,0,15,80a66.121,66.121,0,0,0,39,59.8,62.151,62.151,0,0,1,1.3-14.9c1.3-5.2,8.5-35.1,8.5-35.1a26.386,26.386,0,0,1-2-10.4c0-9.7,5.9-16.9,12.4-16.9,5.9,0,8.5,4.5,8.5,9.7a128.456,128.456,0,0,1-5.9,22.7,9.646,9.646,0,0,0,6.6,12,8.105,8.105,0,0,0,3.8.3c12.4,0,20.8-15.6,20.8-34.4,0-14.3-9.7-24.7-27.3-24.7a30.869,30.869,0,0,0-31.8,30v1.2a19.8,19.8,0,0,0,4.5,13,2.586,2.586,0,0,1,.6,3.3c0,1.3-1.3,3.9-1.3,5.2-.6,2-2,2-3.3,2-9.1-3.9-13-13.6-13-24.7,0-18.2,15.6-40.3,46.1-40.3a38.763,38.763,0,0,1,40.9,36.7v.4c0,25.4-14.3,44.9-35.1,44.9A18.163,18.163,0,0,1,72.7,112s-3.9,14.9-4.5,17.6a46.615,46.615,0,0,1-6.5,13.7,79.828,79.828,0,0,0,18.2,1.9A65.1,65.1,0,0,0,80,15Z"></path></svg> pinterest</button><div class="jw-reset jw-settings-content-item jw-sharing-copy" aria-label="link" role="button" tabindex="0"><button class="jw-reset jw-sharing-link" aria-checked="false" type="button" role="button"><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-link" viewBox="0 0 160 160" focusable="false"><path d="M79.4,99.6H92.5v2a33.6,33.6,0,0,1-9.8,24.2l-9.8,9.8a34.716,34.716,0,0,1-48.4,0,34.716,34.716,0,0,1,0-48.4l9.2-10.5a33.6,33.6,0,0,1,24.2-9.8h1.9V80H58.5a19.359,19.359,0,0,0-15.1,6.5l-9.8,9.8a20.976,20.976,0,0,0-.5,29.6l.5.5a20.976,20.976,0,0,0,29.6.5l.5-.5,9.8-9.8a20.905,20.905,0,0,0,6.5-15h0v-2ZM135,24.4h0a34.716,34.716,0,0,0-48.4,0L76.1,34.2a33.6,33.6,0,0,0-9.8,24.2v2H79.4v-2a19.359,19.359,0,0,1,6.5-15.1l9.8-9.8a20.976,20.976,0,0,1,29.6-.5l.5.5a20.976,20.976,0,0,1,.5,29.6l-.5.5-10.5,9.8a20.905,20.905,0,0,1-15,6.5H99V93h1.3a33.6,33.6,0,0,0,24.2-9.8l9.8-9.8A34.89,34.89,0,0,0,135,24.4ZM63,106.2l42.5-42.5-9.8-9.8L53.2,96.4Z"></path></svg> Link</button><textarea readonly="true" class="jw-reset jw-sharing-textarea">https://hackr.io/blog/devops-skills-you-need</textarea><div class="jw-reset jw-tooltip jw-tooltip-sharing-Link"><div class="jw-text">Copied</div></div></div></div></div><div id="jw-OtJqGFLy-settings-submenu-quality" class="jw-reset jw-settings-submenu jw-settings-submenu-quality" role="menu" aria-expanded="false"><div class="jw-reset jw-settings-submenu-items"><button type="button" class="jw-reset-text jw-settings-content-item jw-settings-item-active" aria-label="Auto" role="menuitemradio" aria-checked="true" dir="auto">Auto<span class="jw-reset jw-auto-label">360p</span></button><button type="button" class="jw-reset-text jw-settings-content-item" aria-label="720p" role="menuitemradio" aria-checked="false" dir="auto">720p</button><button type="button" class="jw-reset-text jw-settings-content-item" aria-label="540p" role="menuitemradio" aria-checked="false" dir="auto">540p</button><button type="button" class="jw-reset-text jw-settings-content-item" aria-label="360p" role="menuitemradio" aria-checked="false" dir="auto">360p</button><button type="button" class="jw-reset-text jw-settings-content-item" aria-label="270p" role="menuitemradio" aria-checked="false" dir="auto">270p</button><button type="button" class="jw-reset-text jw-settings-content-item" aria-label="180p" role="menuitemradio" aria-checked="false" dir="auto">180p</button></div></div></div><div class="jw-controlbar jw-reset"><div class="jw-slider-time jw-chapter-slider-time jw-background-color jw-reset jw-slider-horizontal jw-reset" aria-valuetext="0 seconds of 30 seconds" aria-valuenow="undefined" tabindex="-1" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="30"><div class="jw-slider-container jw-reset"><div class="jw-reset jw-old-rail"><div class="jw-timesegment jw-reset" aria-hidden="true" style="flex-grow: 30;">
+                        <!-- <div class="jw-timesegment-resetter jw-reset">
+                            <div class="jw-timesegment-container jw-reset">
+                                <div class="jw-timesegment-bar jw-rail jw-timesegment-background jw-reset"></div>
+                                <div class="jw-timesegment-bar jw-buffer jw-timesegment-buffered jw-reset" style="width: 12.9531%;"></div>
+                                <div class="jw-timesegment-bar jw-progress jw-timesegment-progress jw-reset" style="width: 27.5846%;"></div>
+                            </div>
+                        </div>
+                    </div></div><div class="jw-reset jw-old-buffer" style="width: 12.9582%;"></div><div class="jw-reset jw-old-progress" style="width: 27.5857%;"></div><div class="jw-knob jw-reset" style="left: 27.5857%;"></div><div class="jw-icon jw-icon-tooltip jw-tooltip-time jw-button-color jw-reset"><div class="jw-overlay jw-reset"><div class="jw-time-tip jw-reset"><div class="jw-time-thumb jw-reset" style="width: 120px; height: 67px; margin: 0px auto; background-image: url(&quot;https://cdn.jwplayer.com/strips/biqCvWxi-120.jpg&quot;); background-position: 0px 0px; background-repeat: no-repeat;"></div><span class="jw-time-chapter jw-text jw-reset" style="display: none;"></span><span class="jw-time-time jw-text jw-reset"></span></div></div></div></div></div><div class="jw-reset jw-button-container"><div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-icon-playback" role="button" tabindex="0" aria-label="Play" style=""><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-play" viewBox="0 0 240 240" focusable="false"><path d="M62.8,199.5c-1,0.8-2.4,0.6-3.3-0.4c-0.4-0.5-0.6-1.1-0.5-1.8V42.6c-0.2-1.3,0.7-2.4,1.9-2.6c0.7-0.1,1.3,0.1,1.9,0.4l154.7,77.7c2.1,1.1,2.1,2.8,0,3.8L62.8,199.5z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-pause" viewBox="0 0 240 240" focusable="false"><path d="M100,194.9c0.2,2.6-1.8,4.8-4.4,5c-0.2,0-0.4,0-0.6,0H65c-2.6,0.2-4.8-1.8-5-4.4c0-0.2,0-0.4,0-0.6V45c-0.2-2.6,1.8-4.8,4.4-5c0.2,0,0.4,0,0.6,0h30c2.6-0.2,4.8,1.8,5,4.4c0,0.2,0,0.4,0,0.6V194.9z M180,45.1c0.2-2.6-1.8-4.8-4.4-5c-0.2,0-0.4,0-0.6,0h-30c-2.6-0.2-4.8,1.8-5,4.4c0,0.2,0,0.4,0,0.6V195c-0.2,2.6,1.8,4.8,4.4,5c0.2,0,0.4,0,0.6,0h30c2.6,0.2,4.8-1.8,5-4.4c0-0.2,0-0.4,0-0.6V45.1z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-stop" viewBox="0 0 240 240" focusable="false"><path d="M190,185c0.2,2.6-1.8,4.8-4.4,5c-0.2,0-0.4,0-0.6,0H55c-2.6,0.2-4.8-1.8-5-4.4c0-0.2,0-0.4,0-0.6V55c-0.2-2.6,1.8-4.8,4.4-5c0.2,0,0.4,0,0.6,0h130c2.6-0.2,4.8,1.8,5,4.4c0,0.2,0,0.4,0,0.6V185z"></path></svg><div class="jw-reset-text jw-tooltip jw-tooltip-play" dir="auto"><div class="jw-text"></div></div></div><div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-icon-rewind" role="button" tabindex="0" aria-label="Rewind 10 Seconds" style=""><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-rewind" viewBox="0 0 240 240" focusable="false"><path d="M113.2,131.078a21.589,21.589,0,0,0-17.7-10.6,21.589,21.589,0,0,0-17.7,10.6,44.769,44.769,0,0,0,0,46.3,21.589,21.589,0,0,0,17.7,10.6,21.589,21.589,0,0,0,17.7-10.6,44.769,44.769,0,0,0,0-46.3Zm-17.7,47.2c-7.8,0-14.4-11-14.4-24.1s6.6-24.1,14.4-24.1,14.4,11,14.4,24.1S103.4,178.278,95.5,178.278Zm-43.4,9.7v-51l-4.8,4.8-6.8-6.8,13-13a4.8,4.8,0,0,1,8.2,3.4v62.7l-9.6-.1Zm162-130.2v125.3a4.867,4.867,0,0,1-4.8,4.8H146.6v-19.3h48.2v-96.4H79.1v19.3c0,5.3-3.6,7.2-8,4.3l-41.8-27.9a6.013,6.013,0,0,1-2.7-8,5.887,5.887,0,0,1,2.7-2.7l41.8-27.9c4.4-2.9,8-1,8,4.3v19.3H209.2A4.974,4.974,0,0,1,214.1,57.778Z"></path></svg><div class="jw-reset-text jw-tooltip jw-tooltip-rewind" dir="auto"><div class="jw-text"></div></div></div><div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-icon-next" role="button" tabindex="0" aria-label="Next" dir="auto" style=""><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-next" viewBox="0 0 240 240" focusable="false"><path d="M165,60v53.3L59.2,42.8C56.9,41.3,55,42.3,55,45v150c0,2.7,1.9,3.8,4.2,2.2L165,126.6v53.3h20v-120L165,60L165,60z"></path></svg><div class="jw-reset-text jw-tooltip jw-tooltip-next" dir="auto"><div class="jw-text"></div></div></div><div aria-label="Unmute button" role="group" tabindex="0" class="jw-icon jw-icon-tooltip jw-icon-volume jw-button-color jw-reset jw-off"><div class="jw-overlay jw-reset" tabindex="0" aria-label="Volume" aria-orientation="vertical" aria-valuemin="0" aria-valuemax="100" role="slider" aria-valuenow="0" aria-valuetext="Volume 0%"><div class="jw-slider-volume jw-volume-tip jw-reset jw-slider-vertical" aria-hidden="true"><div class="jw-slider-container jw-reset"><div class="jw-rail jw-reset"></div><div class="jw-buffer jw-reset"></div><div class="jw-progress jw-reset" style="height: 0%;"></div><div class="jw-knob jw-reset" style="bottom: 0%;"></div></div></div></div><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-volume-0" viewBox="0 0 240 240" focusable="false"><path d="M116.4,42.8v154.5c0,2.8-1.7,3.6-3.8,1.7l-54.1-48.1H28.9c-2.8,0-5.2-2.3-5.2-5.2V94.2c0-2.8,2.3-5.2,5.2-5.2h29.6l54.1-48.1C114.6,39.1,116.4,39.9,116.4,42.8z M212.3,96.4l-14.6-14.6l-23.6,23.6l-23.6-23.6l-14.6,14.6l23.6,23.6l-23.6,23.6l14.6,14.6l23.6-23.6l23.6,23.6l14.6-14.6L188.7,120L212.3,96.4z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-volume-50" viewBox="0 0 240 240" focusable="false"><path d="M116.4,42.8v154.5c0,2.8-1.7,3.6-3.8,1.7l-54.1-48.1H28.9c-2.8,0-5.2-2.3-5.2-5.2V94.2c0-2.8,2.3-5.2,5.2-5.2h29.6l54.1-48.1C114.7,39.1,116.4,39.9,116.4,42.8z M178.2,120c0-22.7-18.5-41.2-41.2-41.2v20.6c11.4,0,20.6,9.2,20.6,20.6c0,11.4-9.2,20.6-20.6,20.6v20.6C159.8,161.2,178.2,142.7,178.2,120z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-volume-100" viewBox="0 0 240 240" focusable="false"><path d="M116.5,42.8v154.4c0,2.8-1.7,3.6-3.8,1.7l-54.1-48H29c-2.8,0-5.2-2.3-5.2-5.2V94.3c0-2.8,2.3-5.2,5.2-5.2h29.6l54.1-48C114.8,39.2,116.5,39.9,116.5,42.8z"></path><path d="M136.2,160v-20c11.1,0,20-8.9,20-20s-8.9-20-20-20V80c22.1,0,40,17.9,40,40S158.3,160,136.2,160z"></path><path d="M216.2,120c0-44.2-35.8-80-80-80v20c33.1,0,60,26.9,60,60s-26.9,60-60,60v20C180.4,199.9,216.1,164.1,216.2,120z"></path></svg></div><div class="jw-horizontal-volume-container" tabindex="0" aria-label="Volume" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" role="slider" aria-valuenow="0" aria-valuetext="Volume 0%"><div class="jw-slider-volume jw-reset jw-slider-horizontal" aria-hidden="true"><div class="jw-slider-container jw-reset"><div class="jw-rail jw-reset"></div><div class="jw-buffer jw-reset"></div><div class="jw-progress jw-reset" style="width: 0%;"></div><div class="jw-knob jw-reset" style="left: 0%;"></div></div></div></div><div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-icon-fullscreen jw-fullscreen-ima" role="button" tabindex="0" aria-label="Fullscreen" style=""><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-fullscreen-off" viewBox="0 0 240 240" focusable="false"><path d="M109.2,134.9l-8.4,50.1c-0.4,2.7-2.4,3.3-4.4,1.4L82,172l-27.9,27.9l-14.2-14.2l27.9-27.9l-14.4-14.4c-1.9-1.9-1.3-3.9,1.4-4.4l50.1-8.4c1.8-0.5,3.6,0.6,4.1,2.4C109.4,133.7,109.4,134.3,109.2,134.9L109.2,134.9z M172.1,82.1L200,54.2L185.8,40l-27.9,27.9l-14.4-14.4c-1.9-1.9-3.9-1.3-4.4,1.4l-8.4,50.1c-0.5,1.8,0.6,3.6,2.4,4.1c0.5,0.2,1.2,0.2,1.7,0l50.1-8.4c2.7-0.4,3.3-2.4,1.4-4.4L172.1,82.1z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-fullscreen-on" viewBox="0 0 240 240" focusable="false"><path d="M96.3,186.1c1.9,1.9,1.3,4-1.4,4.4l-50.6,8.4c-1.8,0.5-3.7-0.6-4.2-2.4c-0.2-0.6-0.2-1.2,0-1.7l8.4-50.6c0.4-2.7,2.4-3.4,4.4-1.4l14.5,14.5l28.2-28.2l14.3,14.3l-28.2,28.2L96.3,186.1z M195.8,39.1l-50.6,8.4c-2.7,0.4-3.4,2.4-1.4,4.4l14.5,14.5l-28.2,28.2l14.3,14.3l28.2-28.2l14.5,14.5c1.9,1.9,4,1.3,4.4-1.4l8.4-50.6c0.5-1.8-0.6-3.6-2.4-4.2C197,39,196.4,39,195.8,39.1L195.8,39.1z"></path></svg><div class="jw-reset-text jw-tooltip jw-tooltip-undefined" dir="auto"><div class="jw-text"></div></div></div><span class="jw-text jw-reset-text jw-text-alt" role="status" dir="auto">This ad will end in 22</span><div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-text-live" role="button" tabindex="0" aria-label="Live" style="display: none;">Live</div><div class="jw-icon jw-icon-inline jw-text jw-reset jw-text-elapsed" role="timer">00:08</div><div class="jw-icon jw-icon-inline jw-text jw-reset jw-text-countdown" role="timer">00:21</div><div class="jw-icon jw-icon-inline jw-text jw-reset jw-text-duration" role="timer">00:30</div><div class="jw-reset jw-spacer"></div><div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-icon-cast" role="button" tabindex="0" aria-label="Chromecast" style="display: none; cursor: pointer;"><google-cast-launcher tabindex="-1" class="jw-reset jw-off"></google-cast-launcher><div class="jw-reset-text jw-tooltip jw-tooltip-chromecast" dir="auto"><div class="jw-text"></div></div></div><div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-icon-cc jw-settings-submenu-button jw-off" role="button" tabindex="0" aria-label="Closed Captions" aria-controls="jw-OtJqGFLy-settings-submenu-captions" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-cc-on" viewBox="0 0 240 240" focusable="false"><path d="M215,40H25c-2.7,0-5,2.2-5,5v150c0,2.7,2.2,5,5,5h190c2.7,0,5-2.2,5-5V45C220,42.2,217.8,40,215,40z M108.1,137.7c0.7-0.7,1.5-1.5,2.4-2.3l6.6,7.8c-2.2,2.4-5,4.4-8,5.8c-8,3.5-17.3,2.4-24.3-2.9c-3.9-3.6-5.9-8.7-5.5-14v-25.6c0-2.7,0.5-5.3,1.5-7.8c0.9-2.2,2.4-4.3,4.2-5.9c5.7-4.5,13.2-6.2,20.3-4.6c3.3,0.5,6.3,2,8.7,4.3c1.3,1.3,2.5,2.6,3.5,4.2l-7.1,6.9c-2.4-3.7-6.5-5.9-10.9-5.9c-2.4-0.2-4.8,0.7-6.6,2.3c-1.7,1.7-2.5,4.1-2.4,6.5v25.6C90.4,141.7,102,143.5,108.1,137.7z M152.9,137.7c0.7-0.7,1.5-1.5,2.4-2.3l6.6,7.8c-2.2,2.4-5,4.4-8,5.8c-8,3.5-17.3,2.4-24.3-2.9c-3.9-3.6-5.9-8.7-5.5-14v-25.6c0-2.7,0.5-5.3,1.5-7.8c0.9-2.2,2.4-4.3,4.2-5.9c5.7-4.5,13.2-6.2,20.3-4.6c3.3,0.5,6.3,2,8.7,4.3c1.3,1.3,2.5,2.6,3.5,4.2l-7.1,6.9c-2.4-3.7-6.5-5.9-10.9-5.9c-2.4-0.2-4.8,0.7-6.6,2.3c-1.7,1.7-2.5,4.1-2.4,6.5v25.6C135.2,141.7,146.8,143.5,152.9,137.7z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-cc-off" viewBox="0 0 240 240" focusable="false"><path d="M99.4,97.8c-2.4-0.2-4.8,0.7-6.6,2.3c-1.7,1.7-2.5,4.1-2.4,6.5v25.6c0,9.6,11.6,11.4,17.7,5.5c0.7-0.7,1.5-1.5,2.4-2.3l6.6,7.8c-2.2,2.4-5,4.4-8,5.8c-8,3.5-17.3,2.4-24.3-2.9c-3.9-3.6-5.9-8.7-5.5-14v-25.6c0-2.7,0.5-5.3,1.5-7.8c0.9-2.2,2.4-4.3,4.2-5.9c5.7-4.5,13.2-6.2,20.3-4.6c3.3,0.5,6.3,2,8.7,4.3c1.3,1.3,2.5,2.6,3.5,4.2l-7.1,6.9C107.9,100,103.8,97.8,99.4,97.8z M144.1,97.8c-2.4-0.2-4.8,0.7-6.6,2.3c-1.7,1.7-2.5,4.1-2.4,6.5v25.6c0,9.6,11.6,11.4,17.7,5.5c0.7-0.7,1.5-1.5,2.4-2.3l6.6,7.8c-2.2,2.4-5,4.4-8,5.8c-8,3.5-17.3,2.4-24.3-2.9c-3.9-3.6-5.9-8.7-5.5-14v-25.6c0-2.7,0.5-5.3,1.5-7.8c0.9-2.2,2.4-4.3,4.2-5.9c5.7-4.5,13.2-6.2,20.3-4.6c3.3,0.5,6.3,2,8.7,4.3c1.3,1.3,2.5,2.6,3.5,4.2l-7.1,6.9C152.6,100,148.5,97.8,144.1,97.8L144.1,97.8z M200,60v120H40V60H200 M215,40H25c-2.7,0-5,2.2-5,5v150c0,2.7,2.2,5,5,5h190c2.7,0,5-2.2,5-5V45C220,42.2,217.8,40,215,40z"></path></svg><div class="jw-reset-text jw-tooltip jw-tooltip-captions" dir="auto"><div class="jw-text"></div></div></div><div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-settings-sharing" button="share" role="button" tabindex="0" aria-label="Share My Videos!" aria-controls="jw-OtJqGFLy-settings-submenu-sharing"><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-sharing" viewBox="0 0 240 240" focusable="false"><path d="M175,160c-6.9,0.2-13.6,2.6-19,7l-62-39c0.8-2.6,1.2-5.3,1-8c0.2-2.7-0.2-5.4-1-8l62-39c5.4,4.4,12.1,6.8,19,7c16.3,0.3,29.7-12.6,30-28.9c0-0.4,0-0.7,0-1.1c0-16.5-13.5-30-30-30s-30,13.5-30,30c-0.2,2.7,0.2,5.4,1,8L84,97c-5.4-4.4-12.1-6.8-19-7c-16.5,0-30,13.5-30,30s13.5,30,30,30c6.9-0.2,13.6-2.6,19-7l62,39c-0.8,2.6-1.2,5.3-1,8c0,16.5,13.5,30,30,30s30-13.5,30-30S191.6,160,175,160z"></path></svg><div class="jw-reset-text jw-tooltip jw-tooltip-share" dir="auto"><div class="jw-text"></div></div></div><div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-related-btn" button="related" role="button" tabindex="0" aria-label="More Videos"><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-more-videos" viewBox="0 0 240 240" focusable="false"><path d="M0,30h60v75H0V30z M0,135h60v75H0V135z M90,135h60v75H90V135z M180,135h60v75h-60V135z M90,30h60v75H90V30z M180,30h60v75h-60V30z"></path></svg><div class="jw-reset-text jw-tooltip jw-tooltip-related" dir="auto"><div class="jw-text"></div></div></div><div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-icon-settings jw-settings-submenu-button" role="button" tabindex="0" aria-label="Settings" aria-controls="jw-OtJqGFLy-settings-menu" aria-expanded="false" style=""><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-settings" viewBox="0 0 240 240" focusable="false"><path d="M204,145l-25-14c0.8-3.6,1.2-7.3,1-11c0.2-3.7-0.2-7.4-1-11l25-14c2.2-1.6,3.1-4.5,2-7l-16-26c-1.2-2.1-3.8-2.9-6-2l-25,14c-6-4.2-12.3-7.9-19-11V35c0.2-2.6-1.8-4.8-4.4-5c-0.2,0-0.4,0-0.6,0h-30c-2.6-0.2-4.8,1.8-5,4.4c0,0.2,0,0.4,0,0.6v28c-6.7,3.1-13,6.7-19,11L56,60c-2.2-0.9-4.8-0.1-6,2L35,88c-1.6,2.2-1.3,5.3,0.9,6.9c0,0,0.1,0,0.1,0.1l25,14c-0.8,3.6-1.2,7.3-1,11c-0.2,3.7,0.2,7.4,1,11l-25,14c-2.2,1.6-3.1,4.5-2,7l16,26c1.2,2.1,3.8,2.9,6,2l25-14c5.7,4.6,12.2,8.3,19,11v28c-0.2,2.6,1.8,4.8,4.4,5c0.2,0,0.4,0,0.6,0h30c2.6,0.2,4.8-1.8,5-4.4c0-0.2,0-0.4,0-0.6v-28c7-2.3,13.5-6,19-11l25,14c2.5,1.3,5.6,0.4,7-2l15-26C206.7,149.4,206,146.7,204,145z M120,149.9c-16.5,0-30-13.4-30-30s13.4-30,30-30s30,13.4,30,30c0.3,16.3-12.6,29.7-28.9,30C120.7,149.9,120.4,149.9,120,149.9z"></path></svg><div class="jw-reset-text jw-tooltip jw-tooltip-settings" dir="auto"><div class="jw-text"></div></div></div><div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-icon-pip" role="button" tabindex="0" aria-label="Picture in Picture (PiP)" style=""><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-pip-on" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 5.125V9.125H22V4.155C22 3.58616 21.5389 3.125 20.97 3.125H2.03C1.46116 3.125 1 3.58613 1 4.155V17.095C1 17.6639 1.46119 18.125 2.03 18.125H12V16.125H3V5.125H20ZM14 11.875C14 11.3227 14.4477 10.875 15 10.875H22C22.5523 10.875 23 11.3227 23 11.875V17.875C23 18.4273 22.5523 18.875 22 18.875H15C14.4477 18.875 14 18.4273 14 17.875V11.875ZM6 12.375L7.79289 10.5821L5.29288 8.0821L6.7071 6.66788L9.20711 9.16789L11 7.375V12.375H6Z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-pip-off" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 5.75V9.75H22V4.78C22 4.21116 21.5389 3.75 20.97 3.75H2.03C1.46116 3.75 1 4.21113 1 4.78V17.72C1 18.2889 1.46119 18.75 2.03 18.75H12V16.75H3V5.75H20ZM14 13.25C14 12.6977 14.4477 12.25 15 12.25H22C22.5523 12.25 23 12.6977 23 13.25V19.25C23 19.8023 22.5523 20.25 22 20.25H15C14.4477 20.25 14 19.8023 14 19.25V13.25ZM10 9.25L8.20711 11.0429L10.7071 13.5429L9.29289 14.9571L6.79289 12.4571L5 14.25V9.25H10Z"></path></svg><div class="jw-reset-text jw-tooltip jw-tooltip-pip" dir="auto"><div class="jw-text"></div></div></div><div class="jw-icon jw-icon-inline jw-button-color jw-reset jw-icon-fullscreen" role="button" tabindex="0" aria-label="Fullscreen" style=""><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-fullscreen-off" viewBox="0 0 240 240" focusable="false"><path d="M109.2,134.9l-8.4,50.1c-0.4,2.7-2.4,3.3-4.4,1.4L82,172l-27.9,27.9l-14.2-14.2l27.9-27.9l-14.4-14.4c-1.9-1.9-1.3-3.9,1.4-4.4l50.1-8.4c1.8-0.5,3.6,0.6,4.1,2.4C109.4,133.7,109.4,134.3,109.2,134.9L109.2,134.9z M172.1,82.1L200,54.2L185.8,40l-27.9,27.9l-14.4-14.4c-1.9-1.9-3.9-1.3-4.4,1.4l-8.4,50.1c-0.5,1.8,0.6,3.6,2.4,4.1c0.5,0.2,1.2,0.2,1.7,0l50.1-8.4c2.7-0.4,3.3-2.4,1.4-4.4L172.1,82.1z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="jw-svg-icon jw-svg-icon-fullscreen-on" viewBox="0 0 240 240" focusable="false"><path d="M96.3,186.1c1.9,1.9,1.3,4-1.4,4.4l-50.6,8.4c-1.8,0.5-3.7-0.6-4.2-2.4c-0.2-0.6-0.2-1.2,0-1.7l8.4-50.6c0.4-2.7,2.4-3.4,4.4-1.4l14.5,14.5l28.2-28.2l14.3,14.3l-28.2,28.2L96.3,186.1z M195.8,39.1l-50.6,8.4c-2.7,0.4-3.4,2.4-1.4,4.4l14.5,14.5l-28.2,28.2l14.3,14.3l28.2-28.2l14.5,14.5c1.9,1.9,4,1.3,4.4-1.4l8.4-50.6c0.5-1.8-0.6-3.6-2.4-4.2C197,39,196.4,39,195.8,39.1L195.8,39.1z"></path></svg><div class="jw-reset-text jw-tooltip jw-tooltip-fullscreen" dir="auto"><div class="jw-text"></div></div></div></div></div></div></div><div class="afs_ads ad-placement" style="width: 1px; height: 1px; position: absolute; background: transparent;">&nbsp;</div></div></div></div></div>
+             -->
+                    <h3 id="badges">Badges</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>badge&nbsp;</p>
+            </td>
+            <td>
+            <p>Add badge, the same size of the previous (immediate) parent element by using em units and similar font size</p>
+            </td>
+            <td>
+            <pre>&lt;h1&gt;Heading text &lt;span class="badge badge-secondary"&gt;Badge same size as heading text&lt;/span&gt;&lt;/h1&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>badge-pill</p>
+            </td>
+            <td>
+            <p>used to make badges more rounded</p>
+            </td>
+            <td>
+            <pre>&lt;span class="badge badge-pill badge-primary"&gt;Primary&lt;/span&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>badge-primary</p>
+            </td>
+            <td>
+            <p>apply css styling corresponding to the primary badge</p>
+            <pre>&lt;span class="badge badge-primary"&gt;Primary badge text variation&lt;/span&gt;</pre>
+            </td>
+            <td>
+            <p>Primary badge text variation</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>badge-secondary</p>
+            </td>
+            <td>
+            <p>apply css styling corresponding to the secondary badge</p>
+            <pre>&lt;span class="badge badge-primary"&gt;Secondary badge text variation&lt;/span&gt;</pre>
+            </td>
+            <td>
+            <p>Secondary badge text variation</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>badge-success</p>
+            </td>
+            <td>
+            <p>styling to display badge indicating success</p>
+            </td>
+            <td>
+            <p>Success badge</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>badge-info</p>
+            </td>
+            <td>
+            <p>styling to display badge indicating info</p>
+            </td>
+            <td>
+            <p>Info badge</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>badge-warning</p>
+            </td>
+            <td>
+            <p>styling to display badge indicating warning</p>
+            </td>
+            <td>
+            <p>Warning badge</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>badge-danger</p>
+            </td>
+            <td>
+            <p>styling to display badge indicating danger</p>
+            </td>
+            <td>
+            <p>Danger badge</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>badge-light</p>
+            </td>
+            <td>
+            <p>styling to display badge indicating light background</p>
+            </td>
+            <td>
+            <p>Light badge</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>badge-dark</p>
+            </td>
+            <td>
+            <p>styling to display badge indicating dark background</p>
+            </td>
+            <td>
+            <p>Dark badge</p>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h2 id="breadcrumbs">Breadcrumbs</h2>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>breadcrumb</p>
+            </td>
+            <td>
+            <p>indicate location of current page along with its navigation hierarchy separated through CSS separators using ::before and content</p>
+            <pre>&lt;nav aria-label="breadcrumb"&gt;<br> &nbsp;&lt;ol class="breadcrumb"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Root&lt;/a&gt;&lt;/li&gt;<br> &nbsp;&nbsp;&nbsp;&lt;li class="breadcrumb-item active" aria-current="page"&gt;packages&lt;/li&gt;<br> &nbsp;&lt;/ol&gt;<br>&lt;/nav&gt;</pre>
+            </td>
+            <td>
+            <p>Root / packages</p>
+            </td>
+            </tr>
+            </tbody>
+            </table></div><div id="AdThrive_Content_1_desktop" class="adthrive-ad adthrive-content adthrive-content-1 adthrive-ad-cls" style="min-height: 250px;" data-google-query-id="CJT28b7yq4EDFWXRcwEd5aoOZA"><div id="google_ads_iframe_/18190176,22535388737/AdThrive_Content_1/638a1525d1a23b1b145263c4_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/18190176,22535388737/AdThrive_Content_1/638a1525d1a23b1b145263c4_0" name="google_ads_iframe_/18190176,22535388737/AdThrive_Content_1/638a1525d1a23b1b145263c4_0" title="3rd party ad content" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-load-complete="true" data-google-container-id="7"></iframe></div></div>
+            <p><strong>Recommended Course</strong></p>
+            <p><a class="btn btn-primary btn-call-to-action " href="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fbootstrap-5-responsive-web-design-and-development%2F&amp;u1=blog%2Fbootstrap-cheat-sheet_amcid-FVoeJEF7zxqN6ogOJxzNU" target="_blank" rel="noopener nofollow" data-am-orig-url="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fbootstrap-5-responsive-web-design-and-development%2F" data-am-clean-href="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fbootstrap-5-responsive-web-design-and-development%2F" data-am-tid="amcid-FVoeJEF7zxqN6ogOJxzNU">Master Bootstrap 5 with 6 projects and Sass customization</a></p>
+            <h2 id="buttons">Buttons</h2>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>btn</p>
+            </td>
+            <td>
+            <p>basic button feature</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn"&gt;Basic&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-primary</p>
+            </td>
+            <td>
+            <p>display buttons with particular style for each class, for example, primary displays button with blue background</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-primary"&gt;Primary&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-secondary</p>
+            </td>
+            <td>
+            <p>displays button with grey background</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-secondary"&gt;secondary button&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-success</p>
+            </td>
+            <td>
+            <p>displays button with green background</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-success"&gt;Success&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-info</p>
+            </td>
+            <td>
+            <p>button with background for info – light blue</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-info"&gt;Info button&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-warning</p>
+            </td>
+            <td>
+            <p>yellow background for warning button</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-warning"&gt;Warning button&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-danger</p>
+            </td>
+            <td>
+            <p>red background for danger button</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-danger"&gt;Danger&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-light</p>
+            </td>
+            <td>
+            <p>light colored button</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-light"&gt;light button&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-dark</p>
+            </td>
+            <td>
+            <p>dark colored button (black)</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-dark"&gt;Dark button &lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-link</p>
+            </td>
+            <td>
+            <p>button with link&nbsp;</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-link"&gt;link in button&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-outline-primary</p>
+            </td>
+            <td>
+            <p>Button with outline and text color same as the primary (blue)</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-outline-primary"&gt;Primary outline&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-outline-secondary</p>
+            </td>
+            <td>
+            <p>Button with outline and text color same as the secondary (grey)</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-outline-secondary"&gt;secondary outline&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-outline-success</p>
+            </td>
+            <td>
+            <p>Button with outline and text color same as the success (green)</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-outline- success "&gt; success outline&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-outline-info</p>
+            </td>
+            <td>
+            <p>Button with outline and text color same as the info (light blue)</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-outline- info "&gt; info outline&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-outline-warning</p>
+            </td>
+            <td>
+            <p>Button with outline and text color same as the warning (yellow)</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-outline- warning "&gt; warning outline&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-outline-danger</p>
+            </td>
+            <td>
+            <p>Button with outline and text color same as the danger (red)</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-outline- danger "&gt; danger outline&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-outline-light</p>
+            </td>
+            <td>
+            <p>Button with outline and text color same as the light (white)</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-outline-light"&gt;light outline and text&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-outline-dark</p>
+            </td>
+            <td>
+            <p>Button with outline and text color same as the secondary (black)</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-outline-dark"&gt;Dark outline&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h2 id="button-groups">Button Groups</h2>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>btn-group</p>
+            </td>
+            <td>
+            <p>used to group series of buttons together</p>
+            </td>
+            <td>
+            <pre>&lt;div class="btn-group"&gt;<br>--individual button items<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-group-lg</p>
+            </td>
+            <td>
+            <p>to create group of large buttons</p>
+            </td>
+            <td>
+            <pre>&lt;div class="btn-group btn-group-lg"&gt;--individual button items&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-group-sm</p>
+            </td>
+            <td>
+            <p>to create group of small buttons</p>
+            </td>
+            <td>
+            <pre>&lt;div class="btn-group btn-group-sm"&gt;--individual button items&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-group-vertical</p>
+            </td>
+            <td>
+            <p>to create group of vertically arranged buttons</p>
+            </td>
+            <td>
+            <pre>&lt;div class="btn-group- vertical "&gt;--individual button items&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-group (nested)</p>
+            </td>
+            <td>
+            <p>used to create dropdown menus. Use class dropdown-toggle, with data-toggle option as dropdown</p>
+            </td>
+            <td>
+            <pre>&lt;div class="btn-group"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ButtonGroupItem<br> &nbsp;&nbsp;&nbsp;&lt;/button&gt;<br> &nbsp;&nbsp;&nbsp;&lt;div class="dropdown-menu"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;--add dropdown menu items<br> &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-toolbar</p>
+            </td>
+            <td>
+            <p>to create multiple button groups side by side</p>
+            </td>
+            <td>
+            <pre>&lt;div class="btn-toolbar" role="toolbar"&gt;<br> &nbsp;&lt;div class="btn-group" role="group" aria-label="grp1"&gt;<br> &nbsp;&nbsp;&nbsp;--group one button types<br> &nbsp;&lt;/div&gt;<br> &nbsp;&lt;div class="btn-group" role="group" aria-label="grp2"&gt;<br> &nbsp;&nbsp;&nbsp;--group two button types<br> &nbsp;&lt;/div&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="button-modifiers">Button Modifiers</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>btn-lg&nbsp;</p>
+            </td>
+            <td>
+            <p>to create button of larger size than the default size</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-primary btn-lg"&gt;Large&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-sm&nbsp;</p>
+            </td>
+            <td>
+            <p>to create button of size smaller than the default size</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn-primary btn-sm"&gt;Small&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>btn-block&nbsp;</p>
+            </td>
+            <td>
+            <p>To create full width buttons that occupy the entire horizontal row</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn btn-primary btn-block"&gt;Full-Width Button&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>active button&nbsp;</p>
+            </td>
+            <td>
+            <p>makes a button look like it is pressed</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn btn-primary active"&gt;Active button with style of primary&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>disabled button&nbsp;</p>
+            </td>
+            <td>
+            <p>button that cannot be clicked (is disabled)</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="btn btn-warning" disabled&gt;Disabled button&lt;/button&gt;</pre>
+            <p>for a link (&lt;a&gt;), disabled has to be used in the class - class="btn btn-warning disabled”</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>checkbox as button&nbsp;</p>
+            </td>
+            <td>
+            <p>display checkboxes as buttons, same can be done with radio using the input type as radio.</p>
+            </td>
+            <td>
+            <pre>&lt;div class="btn-group btn-group-toggle" data-toggle="buttons"&gt;<br> &nbsp;&lt;label class="btn btn-secondary active"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;input type="checkbox" checked autocomplete="off"&gt; checkbox1<br> &nbsp;&lt;/label&gt;<br> &nbsp;&lt;label class="btn btn-secondary"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;input type="checkbox" autocomplete="off"&gt; checkbox2<br> &nbsp;&lt;/label&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>spinner buttons</p>
+            </td>
+            <td>
+            <p>add spinner (the loading circle component) to a button</p>
+            </td>
+            <td>
+            <pre>&lt;button class="btn btn-primary"&gt;<br> &nbsp;&lt;span class="spinner-border spinner-border-sm"&gt;&lt;/span&gt;<br> &nbsp;Loading..<br>&lt;/button&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="cards">Cards</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>card&nbsp;</p>
+            </td>
+            <td>
+            <p>card is like a business card having padding around the content. There are options for header, content, footer etc..</p>
+            </td>
+            <td>
+            <pre>&lt;div class="card"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>card-body&nbsp;</p>
+            </td>
+            <td>
+            <p>holds the content of the card</p>
+            </td>
+            <td>
+            <pre>&nbsp; &lt;div class="card-body"&gt;Contents of the card&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>card-title&nbsp;</p>
+            </td>
+            <td>
+            <p>The title of card that is displayed on top</p>
+            </td>
+            <td>
+            <pre>&lt;h2 class="card-title"&gt;Title of card in h2&lt;/h2&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>card-subtitle&nbsp;</p>
+            </td>
+            <td>
+            <p>Adds subtitle or quick small text</p>
+            </td>
+            <td>
+            <pre>&lt;h6 class="card-subtitle"&gt;Card subtitle&lt;/h6&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>card-text&nbsp;</p>
+            </td>
+            <td>
+            <p>Add lot of text and paragraphs to the card</p>
+            </td>
+            <td>
+            <pre>&lt;p class="card-text"&gt;text.text.text&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>card-link&nbsp;</p>
+            </td>
+            <td>
+            <p>To add a link to a card; multiple links can be added</p>
+            </td>
+            <td>
+            <pre>&lt;a href="#!" class="card-link"&gt;link in the card&lt;/a&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>card-img-top&nbsp;</p>
+            </td>
+            <td>
+            <p>the main card image shown on the top</p>
+            </td>
+            <td>
+            <pre>&lt;img class="card-img-top" src="myimpimage.png"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>middle image&nbsp;</p>
+            </td>
+            <td>
+            <p>To display an image in the middle, no need to specify card image class as top or bottom, just add the image tag.</p>
+            </td>
+            <td>
+            <pre>&lt;img src="myimpimage.png"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>card-img-bottom&nbsp;</p>
+            </td>
+            <td>
+            <p>display image after the card content</p>
+            </td>
+            <td>
+            <pre>&lt;img class="card-img-bottom" src="myimpimage.png"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>card-img-overlay&nbsp;</p>
+            </td>
+            <td>
+            <p>To display image in the background. Can contain text over it.</p>
+            </td>
+            <td>
+            <pre>&lt;div class="card-img-overlay"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;p class="card-text"&gt;See the image at background&lt;/p&gt;<br>&nbsp;&nbsp;&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-group&nbsp;</p>
+            </td>
+            <td>
+            <p>list of items in a card</p>
+            </td>
+            <td>
+            <pre> &lt;ul class="list-group"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;li class="list-group-item"&gt;Item 1&lt;/li&gt;<br> &nbsp;&nbsp;&nbsp;&lt;li class="list-group-item"&gt;Item 2&lt;/li&gt;<br>&nbsp;&nbsp;&lt;/ul&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>card-header&nbsp;</p>
+            </td>
+            <td>
+            <p>add header for a card</p>
+            </td>
+            <td>
+            <pre>&lt;div class="card-header"&gt;<br> &nbsp;&nbsp;&nbsp;This is text for card header<br>&nbsp;&nbsp;&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>h*.card-header&nbsp;</p>
+            </td>
+            <td>
+            <p>card header with particular heading size, h1-h6</p>
+            </td>
+            <td>
+            <pre>&nbsp; &lt;h3 class="card-header"&gt;Card header in h3&lt;/h3&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>card-footer&nbsp;</p>
+            </td>
+            <td>
+            <p>footer for the card</p>
+            </td>
+            <td>
+            <pre>&lt;div class="card-footer"&gt;<br> &nbsp;&nbsp;&nbsp;footer content<br>&nbsp;&nbsp;&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>card-group&nbsp;</p>
+            </td>
+            <td>
+            <p>contains multiple cards side by side without any margins</p>
+            </td>
+            <td>
+            <pre>&lt;div class="card-group"&gt; …card 1 div tags<br>…card 2 div tags<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>card-deck&nbsp;</p>
+            </td>
+            <td>
+            <p>creates cards side by side with margins. All cards are of equal size (height and width)</p>
+            </td>
+            <td>
+            <pre>&lt;div class="card-deck"&gt; …card 1 div tags<br>…card 2 div tags<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>card-columns&nbsp;</p>
+            </td>
+            <td>
+            <p>cards are displayed as a grid with rows and columns that adjust automatically as cards are added or removed</p>
+            </td>
+            <td>
+            <pre>&lt;div class="card-columns"&gt; …card 1 div tags<br>…card 2 div tags<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>card bg-... text-...</p>
+            </td>
+            <td>
+            <p>used to style the cards by formatting with different colors for text and background</p>
+            </td>
+            <td>
+            <pre>&lt;div class = "card text-&lt;color&gt; bg-&lt;color&gt;"&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="carousel">Carousel</h3>
+            <p>Adds slide show for going through elements in a cyclic fashion</p>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>carousel slide&nbsp;</p>
+            </td>
+            <td>
+            <p>adds animation and CSS transition effect while moving from one slide to next.&nbsp;</p>
+            </td>
+            <td>
+            <pre>&lt;div class="carousel slide" data-ride="carousel"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>carousel-fade&nbsp;</p>
+            </td>
+            <td>
+            <p>adds a fading effect when slide changes from one to next</p>
+            </td>
+            <td>
+            <pre>&lt;div class="carousel slide carousel-fade" data-ride="carousel"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>carousel-inner</p>
+            </td>
+            <td>
+            <p>contains individual slides to the carousel</p>
+            </td>
+            <td>
+            <pre>&lt;div class="carousel-inner"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>carousel-item</p>
+            </td>
+            <td>
+            <p>Add an individual item (slide) to the carousel. The current (first) item is marked as active</p>
+            </td>
+            <td>
+            <pre>&lt;div class="carousel-item"&gt;<br>&lt;div class="carousel-item active"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>carousel-indicators&nbsp;</p>
+            </td>
+            <td>
+            <p>indicates the number of slides, current slide being shown as dots/bars at the bottom of the carousel</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="carousel-indicators"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;li data-target="#demo" data-slide-to="0" class="active"&gt;&lt;/li&gt;<br> &nbsp;&nbsp;&nbsp;&lt;li data-target="#demo" data-slide-to="1"&gt;&lt;/li&gt;<br>&lt;/ul&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>carousel-caption</p>
+            </td>
+            <td>
+            <p>Adds caption for individual slides (carousel-item)</p>
+            </td>
+            <td>
+            <pre>&lt;div class="carousel-caption"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>carousel-control-prev</p>
+            </td>
+            <td>
+            <p>left control</p>
+            </td>
+            <td>
+            <pre>&nbsp; &lt;a class="carousel-control-prev" href="#demo" data-slide="prev"&gt;&lt;/a&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>carousel-control-next</p>
+            </td>
+            <td>
+            <p>right control</p>
+            </td>
+            <td>
+            <pre>&nbsp; &lt;a class="carousel-control-next" href="#demo" data-slide="prev"&gt;&lt;/a&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <pre>Collapse</pre>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>collapse&nbsp;</p>
+            </td>
+            <td>
+            <p>provides basic expand/collapse functionality</p>
+            </td>
+            <td>
+            <pre>&lt;p&gt;<br> &nbsp;&lt;a class="btn btn-primary" data-toggle="collapse" href="#expandcollapse" aria-expanded="false" aria-controls="expandcollapse"&gt;<br> &nbsp;&nbsp;&nbsp;Click to expand/collapse<br> &nbsp;&lt;/a&gt;<br>&lt;/p&gt;<br>&lt;div class="collapse" id="expandcollapse"&gt;<br> &nbsp;&lt;div class="card card-body"&gt;<br> &nbsp;&nbsp;&nbsp;lot of text<br> &nbsp;&lt;/div&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>accordion</p>
+            </td>
+            <td>
+            <p>accordion collapsible format using the card component</p>
+            </td>
+            <td>
+            <pre>&lt;div id="accordion"&gt;<br> &nbsp;&lt;div class="card"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;div class="card-header"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="card-link" data-toggle="collapse" href="#item1"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item #1<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br> &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br> &nbsp;&nbsp;&nbsp;&lt;div id="item1" class="collapse show" data-parent="#accordion"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-body"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text for expand/collapse<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br> &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br> &nbsp;&lt;/div&gt;<br> &nbsp;&lt;div class="card"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;div class="card-header"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="collapsed card-link" data-toggle="collapse" href="#item2"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item #2<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br> &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br> &nbsp;&nbsp;&nbsp;&lt;div id="item2" class="collapse" data-parent="#accordion"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-body"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text for expand/collapse<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br> &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br> &nbsp;&lt;/div&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h1>Dropdowns</h1>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>dropdown&nbsp;</p>
+            </td>
+            <td>
+            <p>Allows users to choose one value out of the many options. Dropdown can be a button or link. To add a down-arrow, use the caret class –</p>
+            <pre>&lt;span class="caret"&gt;</pre>
+            </td>
+            <td>
+            <pre>&lt;div class="dropdown"&gt;</pre>
+            <p>and then in the button or link definition, add</p>
+            <p>data-toggle="dropdown" attribute</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>dropdown (split)&nbsp;</p>
+            </td>
+            <td>
+            <p>To show the dropdown menu with proper spacing around the caret. The caret is centred between the button (or link) and the dropdown menu when expanded.</p>
+            <p>Use “dropdown-toggle dropdown-toggle-split” along with the button or link class.</p>
+            </td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td>
+            <p>dropup&nbsp;</p>
+            </td>
+            <td>
+            <p>Same functionality as dropdown except the caret is pointed up and menu is shown above the button or link.&nbsp;</p>
+            </td>
+            <td>
+            <p>Use the div class as ‘dropup’ and data-toggle = “dropdown”</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>dropup (split)&nbsp;</p>
+            </td>
+            <td>
+            <p>Same as dropdown (split) but with menus shown above. The caret is centred between the button/link and the menu items shown when expanded.</p>
+            </td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td>
+            <p>dropright&nbsp;</p>
+            </td>
+            <td>
+            <p>to display the dropdown menu on the right side. Add&nbsp;</p>
+            <pre>&lt;div class="dropdown dropright"&gt;</pre>
+            <p>and then in the menu list element, x-placement="right-start"</p>
+            </td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td>
+            <p>dropleft&nbsp;</p>
+            </td>
+            <td>
+            <p>Display the dropdown menu on the left side.&nbsp;</p>
+            <pre>&lt;div class="dropdown dropleft"&gt;</pre>
+            </td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td>
+            <p>dropdown-header&nbsp;</p>
+            </td>
+            <td>
+            <p>To add headers inside the menu list. This is useful when we divide the dropdowns in categories. Add header as another list element –</p>
+            <pre>&lt;li class="dropdown-header"&gt;Dropdown header A&lt;/li&gt;</pre>
+            </td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td>
+            <p>dropdown-item-text&nbsp;</p>
+            </td>
+            <td>
+            <p>Add plain text to a dropdown item; can be used as text on links too by adding href</p>
+            </td>
+            <td>
+            <pre>&lt;span class="dropdown-item-text"&gt;Plain Text&lt;/span&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>dropdown-divider&nbsp;</p>
+            </td>
+            <td>
+            <p>creates a thin horizontal border between links to separate them. Just add the class wherever the divider is required on the list.</p>
+            <pre>&lt;div class="dropdown-divider"&gt;&lt;/div&gt;</pre>
+            </td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td>
+            <p>dropdown-item disabled&nbsp;</p>
+            </td>
+            <td>
+            <p>To disable any action on a particular dropdown item; use the class “dropdown-item disabled” on the particular item</p>
+            </td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td>
+            <p>dropdown-item-active</p>
+            </td>
+            <td>
+            <p>To make the particular dropdown item active by making the background blue. Add the class “dropdown-item active” to the particular item</p>
+            </td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td>
+            <p>dropdown-menu-right</p>
+            </td>
+            <td>
+            <p>right align the drop-down menu</p>
+            </td>
+            <td>
+            <pre>&lt;div class="dropdown-menu dropdown-menu-right"&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div><div id="AdThrive_Content_2_desktop" class="adthrive-ad adthrive-content adthrive-content-2 adthrive-ad-cls" style="min-height: 250px;" data-google-query-id="CIXRpeLyq4EDFePecwEdh2gDZQ"><div id="google_ads_iframe_/18190176,22535388737/AdThrive_Content_2/638a1525d1a23b1b145263c4_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/18190176,22535388737/AdThrive_Content_2/638a1525d1a23b1b145263c4_0" name="google_ads_iframe_/18190176,22535388737/AdThrive_Content_2/638a1525d1a23b1b145263c4_0" title="3rd party ad content" width="552" height="334" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-load-complete="true" data-google-container-id="4"></iframe></div></div>
+            <pre>Forms</pre>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>form-group&nbsp;</p>
+            </td>
+            <td>
+            <p>creates a stacked form with proper margins when added as a wrapper around each input type or form control</p>
+            </td>
+            <td>
+            <pre>&nbsp; &lt;div class="form-group"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>form-inline&nbsp;</p>
+            </td>
+            <td>
+            <p>all elements are inline and left-aligned</p>
+            </td>
+            <td>
+            <pre>&lt;form class="form-inline" action="someactionpage.jsp"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>form using the grid&nbsp;</p>
+            </td>
+            <td>
+            <p>use rows and columns inside form</p>
+            </td>
+            <td>
+            <pre>&lt;form&gt;<br> &nbsp;&lt;div class="row"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;div class="col"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" class="form-control" id="login id" placeholder="Enter login id" name="login"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br> &nbsp;&nbsp;&nbsp;&lt;div class="col"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="password" class="form-control" placeholder="Enter password" name="pwd"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br> &nbsp;&lt;/div&gt;<br>&lt;/form&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>form-control&nbsp;</p>
+            </td>
+            <td>
+            <p>default class for styling &lt;input&gt;, &lt;select&gt; and &lt;textarea&gt; elements</p>
+            </td>
+            <td>
+            <pre>&lt;input type="password" class="form-control" ….</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>form-control-lg&nbsp;</p>
+            </td>
+            <td>
+            <p>large size form area</p>
+            </td>
+            <td>
+            <pre>&lt;input type="password" class="form-control-lg" ….</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>form-control-sm&nbsp;</p>
+            </td>
+            <td>
+            <p>small size form area</p>
+            </td>
+            <td>
+            <pre>&lt;input type="password" class="form-control-sm" ….</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>form-control-file&nbsp;</p>
+            </td>
+            <td>
+            <p>form control to upload file</p>
+            </td>
+            <td>
+            <pre>&lt;input type="file" class="form-control-file" id="formcontrolfileupload"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>form-control-plaintext&nbsp;</p>
+            </td>
+            <td>
+            <p>to have read only contents in the form without losing the styling&nbsp;</p>
+            </td>
+            <td>
+            <pre>&lt;input type="text" readonly class="form-control-plaintext" id="defaulttext" value="someexample@gmail.com"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>form-control-range&nbsp;</p>
+            </td>
+            <td>
+            <p>to include range element</p>
+            </td>
+            <td>
+            <pre>&lt;input type="range" class="form-control-range"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>form-check&nbsp;</p>
+            </td>
+            <td>
+            <p>to create a checkbox input</p>
+            </td>
+            <td>
+            <pre>&lt;div class="form-group form-check"&gt;<br>&lt;input class="form-check-input" type="checkbox" name = "Agree"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>form-check-inline&nbsp;</p>
+            </td>
+            <td>
+            <p>to create checkboxes side by side</p>
+            <p>&lt;div class="form-check form-check-inline"&gt;</p>
+            </td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td>
+            <p>disabled items&nbsp;</p>
+            </td>
+            <td>
+            <p>Add items that cannot be clicked; are disabled (greyed out)</p>
+            </td>
+            <td>
+            <pre>&lt;fieldset disabled&gt;<br> &nbsp;&lt;div class="form-group"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="disabledTextInput"&gt;Disabled text box&lt;/label&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input box"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&lt;/fieldset&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>readonly</p>
+            </td>
+            <td>
+            <p>adds read only text</p>
+            </td>
+            <td>
+            <pre>&lt;input class="form-control" type="text" placeholder="I am a read only text" readonly&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="form-input-groups">Form input groups</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>input-group&nbsp;</p>
+            </td>
+            <td>
+            <p>container that enhances an input field by adding button, text or icon before or after the field to help the user.</p>
+            </td>
+            <td>
+            <pre>&nbsp; &lt;div class="input-group"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>input-group-prepend&nbsp;</p>
+            </td>
+            <td>
+            <p>add a help text before the input field</p>
+            </td>
+            <td>
+            <pre> &nbsp; &lt;div class="input-group-prepend"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="input-group-text"&gt;+91&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>input-group-append&nbsp;</p>
+            </td>
+            <td>
+            <p>add a help text after the input field</p>
+            </td>
+            <td>
+            <pre> &nbsp; &lt;div class="input-group-append"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="input-group-text"&gt;@gmail.com&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>input-group-sm&nbsp;</p>
+            </td>
+            <td>
+            <p>for small input groups</p>
+            </td>
+            <td>
+            <pre>&lt;div class="input-group input-group-sm"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>input-group-lg&nbsp;</p>
+            </td>
+            <td>
+            <p>for large input groups</p>
+            </td>
+            <td>
+            <pre>&lt;div class="input-group input-group-lg"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>checkbox&nbsp;</p>
+            </td>
+            <td>
+            <p>add check box before or after input field</p>
+            </td>
+            <td>
+            <pre>&lt;div class="input-group"&gt;<br> &nbsp;&lt;div class="input-group-*"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;div class="input-group-text"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br> &nbsp;&lt;/div&gt;<br> &nbsp;&lt;input type="text" class="form-control"&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>radio&nbsp;</p>
+            </td>
+            <td>
+            <p>add radio button before or after input field</p>
+            </td>
+            <td>
+            <pre>&lt;div class="input-group"&gt;<br> &nbsp;&lt;div class="input-group-*"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;div class="input-group-text"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br> &nbsp;&lt;/div&gt;<br> &nbsp;&lt;input type="text" class="form-control"&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>dropdown&nbsp;</p>
+            </td>
+            <td>
+            <p>add dropdown before or after input field</p>
+            </td>
+            <td>
+            <pre>&lt;div class="input-group"&gt;<br> &nbsp;&lt;div class="input-group-*"&gt;<br> &nbsp;&nbsp;&nbsp;...code to add dropdown (check dropdown section)<br> &nbsp;&lt;/div&gt;<br> &nbsp;&lt;input type="text" class="form-control" label="Text input with dropdown button"&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="custom-forms">Custom Forms</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>custom-checkbox&nbsp;</p>
+            </td>
+            <td>
+            <p>create custom checkboxes</p>
+            </td>
+            <td>
+            <pre>&lt;form&gt;<br> &nbsp;&lt;div class="custom-control custom-checkbox"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;input type="checkbox" class="custom-control-input" id="customCheckBox" name="chkboxexample"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;label class="custom-control-label" for="customCheckBox"&gt;Custom checkbox&lt;/label&gt;<br> &nbsp;&lt;/div&gt;<br>&lt;/form&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>custom-radio&nbsp;</p>
+            </td>
+            <td>
+            <p>create custom radio buttons</p>
+            </td>
+            <td>
+            <pre>&lt;form&gt;<br> &nbsp;&lt;div class="custom-control custom-radio"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;input type="radio" class="custom-control-input" id="customRadio" name="radioexample"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;label class="custom-control-label" for="customRadio"&gt;Custom Radio button&lt;/label&gt;<br> &nbsp;&lt;/div&gt;<br>&lt;/form&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>custom-switch&nbsp;</p>
+            </td>
+            <td>
+            <p>create custom toggle switch</p>
+            </td>
+            <td>
+            <pre>&lt;div class="custom-control custom-switch"&gt;<br> &nbsp;&lt;input type="checkbox" class="custom-control-input" id="customSwitch"&gt;<br> &nbsp;&lt;label class="custom-control-label" for="customSwitch"&gt;Toggle switch element&lt;/label&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>custom-select&nbsp;</p>
+            </td>
+            <td>
+            <p>create custom select options</p>
+            </td>
+            <td>
+            <pre>&lt;select class="custom-select"&gt;<br> &nbsp;&lt;option selected&gt;Custom select menu&lt;/option&gt;<br> &nbsp;&lt;option value="1"&gt;Val1&lt;/option&gt;<br> &nbsp;&lt;option value="2"&gt;Val2&lt;/option&gt;<br> &nbsp;&lt;option value="3"&gt;Val3&lt;/option&gt;<br>&lt;/select&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>custom-file&nbsp;</p>
+            </td>
+            <td>
+            <p>display custom file upload option</p>
+            </td>
+            <td>
+            <pre>&lt;div class="custom-file"&gt;<br> &nbsp;&lt;input type="file" class="custom-file-input" id="customFile"&gt;<br> &nbsp;&lt;label class="custom-file-label" for="customFile"&gt;Choose your file&lt;/label&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>custom-range</p>
+            </td>
+            <td>
+            <p>create a custom range menu with rectangle pointer and bar</p>
+            </td>
+            <td>
+            <pre>&lt;form&gt;<br> &nbsp;&lt;label for="customRange"&gt;Custom range&lt;/label&gt;<br> &nbsp;&lt;input type="range" class="custom-range" id="customRange"&gt;<br>&lt;/form&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="grid">Grid</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>container&nbsp;</p>
+            </td>
+            <td>
+            <p>container for the grid</p>
+            </td>
+            <td>
+            <pre>&lt;div class="container"&gt;content&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>container-fluid&nbsp;</p>
+            </td>
+            <td>
+            <p>fluid container for full-width</p>
+            </td>
+            <td>
+            <pre>&lt;div class="container-fluid"&gt;full-width container&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>row&nbsp;</p>
+            </td>
+            <td>
+            <p>row elements of the grid</p>
+            </td>
+            <td>
+            <pre> &lt;div class="row"&gt;<br> &nbsp;&nbsp;... column elements for the row<br>&nbsp;&nbsp;&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>col-# ( &lt;576px)&nbsp;</p>
+            </td>
+            <td>
+            <p>column with specified width</p>
+            </td>
+            <td>
+            <pre>&lt;div class="col-2"&gt;<br>&lt;div class="col-4"&gt;<br>&lt;div class="col-8"&gt;</pre>
+            <p>...</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>col-sm-# ( ≥576px)&nbsp;</p>
+            </td>
+            <td>
+            <p>small columns with specified width</p>
+            </td>
+            <td>
+            <pre> &nbsp; &lt;div class="col-sm-2"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;div class="col-sm-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-sm-8"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>col-md-# ( ≥768px)&nbsp;</p>
+            </td>
+            <td>
+            <p>medium column</p>
+            </td>
+            <td>
+            <pre> &nbsp; &lt;div class="col-md-2"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;div class="col-md-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-8"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>col-lg-# ( ≥992px)&nbsp;</p>
+            </td>
+            <td>
+            <p>large column</p>
+            </td>
+            <td>
+            <pre> &nbsp; &lt;div class="col-lg-2"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;div class="col-lg-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-lg-8"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>col-xl-# ( ≥1200px)&nbsp;</p>
+            </td>
+            <td>
+            <p>extra large column</p>
+            </td>
+            <td>
+            <pre> &nbsp; &lt;div class="col-xl-2"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;div class="col-xl-4"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-xl-8"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>col&nbsp;</p>
+            </td>
+            <td>
+            <p>equal size column</p>
+            </td>
+            <td>
+            <pre>&lt;div class="col"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>col-*&nbsp;</p>
+            </td>
+            <td>
+            <p>equal width columns – col-sm, col-md, col-lg, col-xl</p>
+            </td>
+            <td>
+            <pre>&lt;div class="col-xl"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>no-gutters&nbsp;</p>
+            </td>
+            <td>
+            <p>remove horizontal padding between columns and margins between rows</p>
+            </td>
+            <td>
+            <pre>&lt;div class="row no-gutters"&gt;… column definitions&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>offset-*-#&nbsp;</p>
+            </td>
+            <td>
+            <p>small, medium, large or extra large offsets with size</p>
+            </td>
+            <td>
+            <pre>&lt;div class="col-3 offset-6"&gt;<br>&lt;div class="col-md-3 offset-md-6"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>order-#&nbsp;</p>
+            </td>
+            <td>
+            <p>order in which the column should appear</p>
+            </td>
+            <td>
+            <pre>&lt;div class="col order-md-2"&gt;Ordered column&lt;/div&gt;<br>&lt;div class="col order-1"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>nested columns</p>
+            </td>
+            <td>
+            <p>columns inside column</p>
+            </td>
+            <td>
+            <pre>&lt;div class="row"&gt;<br> &nbsp;&lt;div class="col-sm-10"&gt;<br> &nbsp;&nbsp;&nbsp;Level 1: small column with 10<br> &nbsp;&nbsp;&nbsp;&lt;div class="row"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-8 col-sm-3"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nested column 1<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-4 col-sm-3"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nested column 2<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br> &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br> &nbsp;&lt;/div&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="images">Images</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>img-fluid&nbsp;</p>
+            </td>
+            <td>
+            <p>display image and adjust size automatically</p>
+            </td>
+            <td>
+            <pre>&lt;img src="/images/drawing.png" class="img-fluid" alt="Your dynamic image"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>img-thumbnail</p>
+            </td>
+            <td>
+            <p>represents thumbnail image</p>
+            </td>
+            <td>
+            <pre>&lt;img class="img-thumbnail" src="/images/drawing.png" alt="Thumbnail image"&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <pre>Jumbotron</pre>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>jumbotron&nbsp;</p>
+            </td>
+            <td>
+            <p>big box created to give extra focus on some special information or text. you can put any valid HTML elements inside jumbotron</p>
+            </td>
+            <td>
+            <pre>&lt;div class="jumbotron"&gt;<br> &nbsp;&lt;h1&gt;heading&lt;/h1&gt;&nbsp;<br> &nbsp;&lt;p&gt;Everything will be displayed inside a big grey box&lt;/p&gt;&nbsp;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>jumbotron-fluid</p>
+            </td>
+            <td>
+            <p>full-width jumbotron occupying the whole horizontal space without displaying the rounded borders</p>
+            </td>
+            <td>
+            <pre>&lt;div class="jumbotron jumbotron-fluid"&gt;<br> &nbsp;&lt;div class="container"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;h1&gt;I am fluid jumbotron&lt;/h1&gt;&nbsp;<br> &nbsp;&nbsp;&nbsp;&lt;p&gt;I occupy the whole horizontal grey area&lt;/p&gt;&nbsp;<br> &nbsp;&lt;/div&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="list-group">List Group</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>list-group&nbsp;</p>
+            </td>
+            <td>
+            <p>display an unordered list with items</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="list-group"&gt;<br> &nbsp;&lt;li class="list-group-item"&gt;one&lt;/li&gt;<br> &nbsp;&lt;li class="list-group-item"&gt;three&lt;/li&gt;<br> &nbsp;&lt;li class="list-group-item"&gt;two&lt;/li&gt;<br>&lt;/ul&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-group-item active&nbsp;</p>
+            </td>
+            <td>
+            <p>highlight the active item</p>
+            </td>
+            <td>
+            <pre>&nbsp; &lt;li class="list-group-item active"&gt;Active item&lt;/li&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-group-item disabled&nbsp;</p>
+            </td>
+            <td>
+            <p>highlight the disabled item</p>
+            </td>
+            <td>
+            <pre>&nbsp; &lt;li class="list-group-item disabled"&gt;disabled list item&lt;/li&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-group-item-action&nbsp;</p>
+            </td>
+            <td>
+            <p>create list of linked items using the &lt;div&gt; class and &lt;a&gt; in place of &lt;ul&gt; and &lt;li&gt;</p>
+            </td>
+            <td>
+            <pre>&lt;div class="list-group"&gt;<br> &nbsp;&lt;a href="#" class="list-group-item list-group-item-action"&gt;One&lt;/a&gt;<br> &nbsp;&lt;a href="#" class="list-group-item list-group-item-action"&gt;Two&lt;/a&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-group-item-primary&nbsp;</p>
+            </td>
+            <td>
+            <p>color list items using the color code of the contextual class primary</p>
+            </td>
+            <td>
+            <pre>&lt;li class="list-group-item list-group-item-primary"&gt;Primary color &lt;/li&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-group-item-secondary&nbsp;</p>
+            </td>
+            <td>
+            <p>color list items using the color code of the contextual class secondary</p>
+            </td>
+            <td>
+            <pre>&lt;li class="list-group-item list-group-item-secondary"&gt;secondary color &lt;/li&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-group-item-success&nbsp;</p>
+            </td>
+            <td>
+            <p>color list items using the color code of the contextual class success</p>
+            </td>
+            <td>
+            <pre>&lt;li class="list-group-item list-group-item-success"&gt;success color &lt;/li&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-group-item-info&nbsp;</p>
+            </td>
+            <td>
+            <p>color list items using the color code of the contextual class info</p>
+            </td>
+            <td>
+            <pre>&lt;li class="list-group-item list-group-item-info"&gt;Info color &lt;/li&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-group-item-warning&nbsp;</p>
+            </td>
+            <td>
+            <p>color list items using the color code of the contextual class warning</p>
+            </td>
+            <td>
+            <pre>&lt;li class="list-group-item list-group-item-warning"&gt;Warning color &lt;/li&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-group-item-danger&nbsp;</p>
+            </td>
+            <td>
+            <p>color list items using the color code of the contextual class danger</p>
+            </td>
+            <td>
+            <pre>&lt;li class="list-group-item list-group-item-danger"&gt;Danger color &lt;/li&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-group-item-light&nbsp;</p>
+            </td>
+            <td>
+            <p>colour list items using the color code of the contextual class light</p>
+            </td>
+            <td>
+            <pre>&lt;li class="list-group-item list-group-item-light"&gt;Light color &lt;/li&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-group-item-dark&nbsp;</p>
+            </td>
+            <td>
+            <p>colour list items using the color code of the contextual class dark</p>
+            </td>
+            <td>
+            <pre>&lt;li class="list-group-item list-group-item-dark"&gt;Dark color &lt;/li&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-group with badges&nbsp;</p>
+            </td>
+            <td>
+            <p>Add badge to list item</p>
+            </td>
+            <td>
+            <pre>&lt;li class="list-group-item"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Starred<br>&lt;span class="badge badge-success badge-pill"&gt;30&lt;/span&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-group with d-flex&nbsp;</p>
+            </td>
+            <td>
+            <p>full-width box for list items</p>
+            </td>
+            <td>
+            <pre>&lt;li class="list-group-item d-flex justify-content-between align-items-center"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-group-horizontal</p>
+            </td>
+            <td>
+            <p>create horizontal list items</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="list-group list-group-horizontal"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-group-flush</p>
+            </td>
+            <td>
+            <p>remove borders and rounded corners</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="list-group list-group-flush"&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div><div id="AdThrive_Content_3_desktop" class="adthrive-ad adthrive-content adthrive-content-3 adthrive-ad-cls" style="min-height: 250px;" data-google-query-id="CLTX8uDyq4EDFekCtwAd4nQHdA"><div id="google_ads_iframe_/18190176,22535388737/AdThrive_Content_3/638a1525d1a23b1b145263c4_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/18190176,22535388737/AdThrive_Content_3/638a1525d1a23b1b145263c4_0" name="google_ads_iframe_/18190176,22535388737/AdThrive_Content_3/638a1525d1a23b1b145263c4_0" title="3rd party ad content" width="552" height="334" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-load-complete="true" data-google-container-id="5"></iframe></div></div>
+            <h3 id="media-objects">Media objects</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>media&nbsp;</p>
+            </td>
+            <td>
+            <p>provides easy way to align media objects along with content. Used for social media objects like tweets, blog post comments etc…</p>
+            </td>
+            <td>
+            <pre>&lt;div class="media"&gt;<br> &nbsp;&lt;img src="img_1.png" alt="Action hero" class="mr-3 square" style="width:60px;"&gt;<br> &nbsp;&lt;div class="media-body"&gt;<br> &nbsp;&nbsp;&nbsp;-- some content adjacent to the media object<br> &nbsp;&lt;/div&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>nested media&nbsp;</p>
+            </td>
+            <td>
+            <p>achieved by placing a new media container inside the .media-body container</p>
+            </td>
+            <td>
+            <pre>&lt;div class="media"&gt;<br> &nbsp;&lt;img src="img_1.png" alt="Action hero" class="mr-3 square" style="width:60px;"&gt;<br> &nbsp;&lt;div class="media-body"&gt;<br> &nbsp;&nbsp;&nbsp;-- some content adjacent to the media object<br> &nbsp;&nbsp;&nbsp;&lt;div class="media"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="img_2.png" alt="Characteristics" class="mr-3 square" style="width:60px;"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="media-body"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- some content adjacent to the nested media object<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br> &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br> &nbsp;&lt;/div&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>d-flex align-self-start&nbsp;</p>
+            </td>
+            <td>
+            <p>top alignment</p>
+            </td>
+            <td>
+            <pre>&lt;img src="img_1.png" class="align-self-start mr-3" style="width:60px"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>d-flex align-self-center&nbsp;</p>
+            </td>
+            <td>
+            <p>middle alignment</p>
+            </td>
+            <td>
+            <pre>&lt;img src="img_1.png" class="align-self-center mr-3" style="width:60px"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>d-flex align-self-end&nbsp;</p>
+            </td>
+            <td>
+            <p>bottom alignment</p>
+            </td>
+            <td>
+            <pre>&lt;img src="img_1.png" class="align-self-end mr-3" style="width:60px"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>right aligned media</p>
+            </td>
+            <td>
+            <p>right alignment of media object i.e. text on left and image on right side – just move the img tag after the div tag</p>
+            </td>
+            <td>
+            <pre>&lt;div class="media"&gt;<br> &nbsp;&lt;img src="img_1.png" alt="Action hero" class="mr-3 square" style="width:60px;"&gt;<br> &nbsp;&lt;div class="media-body"&gt;<br> &nbsp;&nbsp;&nbsp;-- some content adjacent to the media object<br> &nbsp;&lt;/div&gt;<br>&lt;img src="img_1.png" alt="Action hero" class="mr-3 square" style="width:60px;"&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="modal">Modal</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>modal&nbsp;</p>
+            </td>
+            <td>
+            <p>to open a modal dialog window on the current page based on user event</p>
+            </td>
+            <td>
+            <pre>-- open the modal dialog on button click<br>&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalname"&gt;<br> &nbsp;Open modal dialog &lt;/button&gt;<br>-- modal creation<br>&lt;div class="modal" id="modalname"&gt;<br>-- inside content<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>modal-dialog-centered&nbsp;</p>
+            </td>
+            <td>
+            <p>open modal dialog in the center of page</p>
+            </td>
+            <td>
+            <pre>&lt;div class="modal-dialog modal-dialog-centered"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>modal-dialog-scrollable&nbsp;</p>
+            </td>
+            <td>
+            <p>to add a scroll bar to the modal window</p>
+            </td>
+            <td>
+            <pre>&lt;div class="modal-dialog modal-dialog-scrollable"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>modal fade&nbsp;</p>
+            </td>
+            <td>
+            <p>add fading effect while opening or closing the modal box</p>
+            </td>
+            <td>
+            <pre>&lt;div class="modal fade"&gt;&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>modal-lg&nbsp;</p>
+            </td>
+            <td>
+            <p>large size modal</p>
+            </td>
+            <td>
+            <pre>&lt;div class="modal-dialog modal-lg"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>modal-sm&nbsp;</p>
+            </td>
+            <td>
+            <p>small sized modal</p>
+            </td>
+            <td>
+            <pre>&lt;div class="modal-dialog modal-sm"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>modal-xl</p>
+            </td>
+            <td>
+            <p>extra-large size modal box</p>
+            </td>
+            <td>
+            <pre>&lt;div class="modal-dialog modal-xl"&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="navs">Navs</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p><span class="skimlinks-unlinked">ul.nav</span>&nbsp;</p>
+            </td>
+            <td>
+            <p>create horizontal menus by adding .nav class to the ul element and then add .nav-item for individual li items. Add links using .nav-link</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="nav"&gt;<br> &nbsp;&lt;li class="nav-item"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;navigation link&lt;/a&gt;</pre>
+            <p>… other nav links</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p><span class="skimlinks-unlinked">nav.nav</span>&nbsp;</p>
+            </td>
+            <td>
+            <p>create horizontal menus in the nav element itself</p>
+            </td>
+            <td>
+            <pre>&lt;nav class="nav"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link" href="#"&gt;navigation link&lt;/a&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>nav justify-content-*&nbsp;</p>
+            </td>
+            <td>
+            <p>justify navigation content to the end (right) or center</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="nav justify-content-center"&gt;<br>&lt;ul class="nav justify-content-end"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>nav flex-column&nbsp;</p>
+            </td>
+            <td>
+            <p>create vertical navigation&nbsp;</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="nav flex-column"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>nav-tabs&nbsp;</p>
+            </td>
+            <td>
+            <p>make the active nav as a tab</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="nav nav-tabs"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;li class="nav-item"&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="nav-link active" href="#"&gt;Active/Current&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>nav-pills&nbsp;</p>
+            </td>
+            <td>
+            <p>shows the navigation menu as navigation pills. You can toggle the pills using data-toggle = “pills” option</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="nav nav-pills"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>nav-fill&nbsp;</p>
+            </td>
+            <td>
+            <p>use .nav-fill to fill the available space proportionately. Can be used on pills or tabs</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="nav nav-pills nav-fill"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>nav-justified&nbsp;</p>
+            </td>
+            <td>
+            <p>justify the pills or tabs using this option (all equal width tabs or pills)</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="nav nav-pills nav-justified"&gt;<br>&lt;ul class="nav nav-tabs nav-justified"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>nav-tabs with dropdown&nbsp;</p>
+            </td>
+            <td>
+            <p>Creates tabs with dropdown menu alongside other navigation items</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="nav nav-tabs"&gt;<br> &nbsp;&lt;li class="nav-item"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;a class="nav-link active" href="#"&gt;Current nav&lt;/a&gt;<br>&nbsp;&nbsp;&lt;/li&gt;<br><br>&nbsp;&nbsp;&lt;li class="nav-item dropdown"&gt;</pre>
+            <p>&nbsp;&nbsp;... code for dropdown</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>nav-pills with dropdown</p>
+            </td>
+            <td>
+            <p>Creates pills with dropdown menu alongside other navigation items</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="nav nav-pills"&gt;<br> &nbsp;&lt;li class="nav-item"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;a class="nav-link active" href="#"&gt;Current nav&lt;/a&gt;<br>&nbsp;&nbsp;&lt;/li&gt;<br><br>&nbsp;&nbsp;&lt;li class="nav-item dropdown"&gt;<br><br>&nbsp;&nbsp;... code for dropdown</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="navbar">Navbar</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>navbar&nbsp;</p>
+            </td>
+            <td>
+            <p>navigation header placed at the top of a webpage</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="navbar-nav"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>navbar-brand&nbsp;</p>
+            </td>
+            <td>
+            <p>used to highlight a brand, main project or logo of the page</p>
+            </td>
+            <td>
+            <pre>&lt;a class="navbar-brand" href="#"&gt;Brand&lt;/a&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>navbar with form&nbsp;</p>
+            </td>
+            <td>
+            <p>add form controls in a navigation bar</p>
+            </td>
+            <td>
+            <pre>&lt;nav class="navbar navbar-expand-md bg-primary navbar-dark"&gt;<br> &nbsp;&lt;form class="form-inline"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>navbar-text&nbsp;</p>
+            </td>
+            <td>
+            <p>to add navbar text</p>
+            </td>
+            <td>
+            <pre>&nbsp; &lt;span class="navbar-text"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>navbar-dark bg-dark&nbsp;</p>
+            </td>
+            <td>
+            <p>add navigation bar with dark background; other possibilities are primary, secondary, success, light, warning, danger, info</p>
+            </td>
+            <td>
+            <pre>&lt;nav class="navbar navbar-dark bg-dark"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>navbar-light&nbsp;</p>
+            </td>
+            <td>
+            <p>navigation bar with light background</p>
+            </td>
+            <td>
+            <pre>&lt;nav class="navbar navbar-light"&gt;&lt;/nav&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>navbar fixed-top&nbsp;</p>
+            </td>
+            <td>
+            <p>nav bar that is fixed on top of the page</p>
+            </td>
+            <td>
+            <pre>&lt;nav class="navbar fixed-top navbar-dark"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>navbar fixed-bottom&nbsp;</p>
+            </td>
+            <td>
+            <p>nav bar that is fixed on bottom of the page</p>
+            </td>
+            <td>
+            <pre>&lt;nav class="navbar fixed-bottom navbar-light"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>navbar sticky-top&nbsp;</p>
+            </td>
+            <td>
+            <p>sticks to the top of the page when scrolled over</p>
+            </td>
+            <td>
+            <pre>&lt;nav class="navbar sticky-top navbar-light"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>collapse navbar-collapse&nbsp;</p>
+            </td>
+            <td>
+            <p>collapse navigation bars and display only when clicked. Useful for small screens like mobile devices</p>
+            </td>
+            <td>
+            <pre> &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="collapse navbar-collapse" id="collapsibleNavbar"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>navbar-toggler&nbsp;</p>
+            </td>
+            <td>
+            <p>used to add expand/collapse functionality to navbar</p>
+            </td>
+            <td>
+            <pre>&lt;button class="navbar-toggler" type="button"</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>navbar-expand-*</p>
+            </td>
+            <td>
+            <p>responsive collapsing class – to stack the navbar vertically as per size (* - sm, md, lg, xl)</p>
+            </td>
+            <td>
+            <pre>&lt;nav class="navbar navbar-expand-sm bg-dark"&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="pagination">Pagination</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>pagination&nbsp;</p>
+            </td>
+            <td>
+            <p>add basic pagination to display only certain records on one page</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="pagination"&gt;<br> &nbsp;&lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Prev&lt;/a&gt;&lt;/li&gt;<br> &nbsp;&lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;<br> &nbsp;&lt;li class="page-item"&gt;&lt;a class="page-link" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>page-item disabled&nbsp;</p>
+            </td>
+            <td>
+            <p>to disable a particular page number or item from being clicked</p>
+            </td>
+            <td>
+            <pre>&lt;li class="page-item disabled"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="page-link" href="#!" tabindex="-1"&gt;Previous&lt;/a&gt; &lt;/li&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>page-item active&nbsp;</p>
+            </td>
+            <td>
+            <p>to indicate the currently active page item</p>
+            </td>
+            <td>
+            <pre>&lt;li class="page-item active"&gt;&lt;a class="page-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>pagination-lg&nbsp;</p>
+            </td>
+            <td>
+            <p>display larger size pagination blocks</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="pagination pagination-lg"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>pagination-sm</p>
+            </td>
+            <td>
+            <p>display smaller size pagination blocks</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="pagination pagination-sm"&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="popover">Popover</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>popovers&nbsp;</p>
+            </td>
+            <td>
+            <p>display popover text on click (similar to tooltip). Popover position can be set using the data-placement attribute,</p>
+            <p>data-placement = top/bottom/left/right</p>
+            <p>Text is closed when the box is clicked again</p>
+            </td>
+            <td>
+            <pre>&lt;a href="#" title="mypopoverdata" data-toggle="popover" data-placement="top" data-content="Content"&gt;click me to see details&lt;/a&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>dismissible popover</p>
+            </td>
+            <td>
+            <p>to close the popover text when user clicks outside the element anywhere in the document</p>
+            </td>
+            <td>
+            <pre>&lt;a href="#" title="Dismissible popover" data-toggle="popover" data-trigger="focus" data-content="Click anywhere to close the popover"&gt;Click&lt;/a&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>hover popover</p>
+            </td>
+            <td>
+            <p>display popover when user moves the mouse pointer over the element</p>
+            </td>
+            <td>
+            <pre>&lt;a href="#" title="Header" data-toggle="popover" data-trigger="hover" data-content="content"&gt;Hover over me to see popover content&lt;/a&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="progress">Progress</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>progress&nbsp;</p>
+            </td>
+            <td>
+            <p>class to add a progress element to the container</p>
+            </td>
+            <td>
+            <pre>&lt;div class="progress"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>progress-bar&nbsp;</p>
+            </td>
+            <td>
+            <p>the main element for progress bar</p>
+            </td>
+            <td>
+            <pre>&lt;div class="progress-bar" role="progressbar" style="width: 41%"&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>progress-bar with label&nbsp;</p>
+            </td>
+            <td>
+            <p>to show a visible percentage (or some text) in the progress bar</p>
+            </td>
+            <td>
+            <pre>&lt;div class="progress-bar" style="width:70%"&gt;progress details&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>progress-bar with height&nbsp;</p>
+            </td>
+            <td>
+            <p>to change the default value, add the css property height. Default value is 16px</p>
+            </td>
+            <td>
+            <pre>&lt;div class="progress-bar" style="width:60%;height:12px"&gt;&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>progress-bar bg-*&nbsp;</p>
+            </td>
+            <td>
+            <p>color for the progress bar. Can be primary, secondary, dark, light, info, success, warning, danger</p>
+            </td>
+            <td>
+            <pre>&lt;div class="progress"&gt; &lt;div class="progress-bar bg-secondary" role="progressbar" style="width: 30%" aria-valuenow="25"&lt;/div&gt; &lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>multiple progress-bar&nbsp;</p>
+            </td>
+            <td>
+            <p>progress bars can be stacked one after other horizontally inside the same “progress” class.</p>
+            </td>
+            <td>
+            <pre>&lt;div class="progress"&gt;<br> &nbsp;&lt;div class="progress-bar bg-danger" style="width:20%"&gt;no charge&lt;/div&gt;<br> &nbsp;&lt;div class="progress-bar bg-warning" style="width:20%"&gt;charge 40%&lt;/div&gt;<br> &nbsp;&lt;div class="progress-bar bg-success" style="width:30%"&gt;charge 70%&lt;/div&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>progress-bar-striped&nbsp;</p>
+            </td>
+            <td>
+            <p>add a striped progress bar</p>
+            </td>
+            <td>
+            <pre>&lt;div class="progress-bar progress-bar-striped" style="width:30%"&gt;&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>progress-bar-striped bg-*&nbsp;</p>
+            </td>
+            <td>
+            <p>striped progress bar with background color</p>
+            </td>
+            <td>
+            <pre>&lt;div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 40%"&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>progress-bar-animated</p>
+            </td>
+            <td>
+            <p>animated progress bar</p>
+            </td>
+            <td>
+            <pre>&lt;div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 20%"&gt;&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="scrollspy">Scrollspy</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>data-spy</p>
+            </td>
+            <td>
+            <p>Used to automatically update the links of a navigation list depending on the scroll position</p>
+            </td>
+            <td>
+            <p>data-spy="scroll" should be added to the element, usually &lt;body&gt; that needs to be used as a scrollable area.</p>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="spinner">Spinner</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>spinner-border&nbsp;</p>
+            </td>
+            <td>
+            <p>create a spinner (loader)</p>
+            </td>
+            <td>
+            <pre>&lt;div class="spinner-border" role="status"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>spinner-border text-*&nbsp;</p>
+            </td>
+            <td>
+            <p>spinner with specific styling. * can be primary, secondary, info, success, warning, danger, dark, light</p>
+            </td>
+            <td>
+            <pre>&lt;div class="spinner-border text-primary" role="status"&gt;<br> &nbsp;&lt;span class="sr-only"&gt;&lt;/span&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>spinner-border-sm&nbsp;</p>
+            </td>
+            <td>
+            <p>small size spinner</p>
+            </td>
+            <td>
+            <pre>&lt;div class="spinner-border spinner-border-sm" role="status"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>spinner-grow&nbsp;</p>
+            </td>
+            <td>
+            <p>spinner that grows and shrinks alternately</p>
+            </td>
+            <td>
+            <pre>&lt;div class="spinner-grow" role="status"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>spinner-grow text-*&nbsp;</p>
+            </td>
+            <td>
+            <p>growing spinners in different colors – primary, secondary etc…</p>
+            </td>
+            <td>
+            <pre>&lt;div class="spinner-grow text-primary" role="status"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>spinner-grow-sm</p>
+            </td>
+            <td>
+            <p>small sized growing spinners</p>
+            </td>
+            <td>
+            <pre>&lt;div class="spinner-grow spinner-grow-sm" role="status"&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="tables">Tables</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>table&nbsp;</p>
+            </td>
+            <td>
+            <p>to add basic table</p>
+            </td>
+            <td>
+            <pre>&lt;table class="table"&gt;…table contents&lt;/table&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>thead-light&nbsp;</p>
+            </td>
+            <td>
+            <p>light header background for the table header (&lt;th&gt;)</p>
+            </td>
+            <td>
+            <pre>&lt;thead class="thead-light"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>thead-dark&nbsp;</p>
+            </td>
+            <td>
+            <p>dark header background for the table header (&lt;th&gt;)</p>
+            </td>
+            <td>
+            <pre>&nbsp; &lt;thead class="thead-dark"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>table-striped&nbsp;</p>
+            </td>
+            <td>
+            <p>striped table background with alternate dark and light (zebra)</p>
+            </td>
+            <td>
+            <pre>&lt;table class="table table-striped"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>table-bordered&nbsp;</p>
+            </td>
+            <td>
+            <p>bordered (ruled) table</p>
+            </td>
+            <td>
+            <pre>&lt;table class="table table-bordered"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>table-borderless&nbsp;</p>
+            </td>
+            <td>
+            <p>table without any borders</p>
+            </td>
+            <td>
+            <pre>&lt;table class="table table-borderless"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>table-hover&nbsp;</p>
+            </td>
+            <td>
+            <p>adds hover effect (dark background on mouse hover)</p>
+            </td>
+            <td>
+            <pre>&lt;table class="table table-hover"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>table-sm&nbsp;</p>
+            </td>
+            <td>
+            <p>small size table</p>
+            </td>
+            <td>
+            <pre>&lt;table class="table table-sm"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>table-*-responsive&nbsp;</p>
+            </td>
+            <td>
+            <p>responsive tables; a horizontal scrollbar is added for small screens (&lt;992px) if required</p>
+            <p>can be sm,md,lg or xl</p>
+            </td>
+            <td>
+            <pre>&lt;table class="table table-sm-responsive"&gt;&lt;!-- ... table content --&gt;&lt;/table&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>table-reflow&nbsp;</p>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td>
+            <p>table-active&nbsp;</p>
+            </td>
+            <td>
+            <p>contextual class active indicates active row in grey</p>
+            </td>
+            <td>
+            <pre>&lt;tr class="table-active"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>table-primary&nbsp;</p>
+            </td>
+            <td>
+            <p>contextual class primary adds blue background to table</p>
+            </td>
+            <td>
+            <pre>&lt;tr class="table-primary"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>table-secondary&nbsp;</p>
+            </td>
+            <td>
+            <p>contextual class secondary adds specific color background to table</p>
+            </td>
+            <td>
+            <pre>&lt;tr class="table-secondary"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>table-success&nbsp;</p>
+            </td>
+            <td>
+            <p>contextual class success adds green color background to table</p>
+            </td>
+            <td>
+            <pre>&lt;tr class="table-success"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>table-info&nbsp;</p>
+            </td>
+            <td>
+            <p>contextual class info adds specific blue background to table</p>
+            </td>
+            <td>
+            <pre>&lt;tr class="table-info"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>table-warning&nbsp;</p>
+            </td>
+            <td>
+            <p>contextual class warning adds yellow color background to table</p>
+            </td>
+            <td>
+            <pre>&lt;tr class="table-warning"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>table-danger&nbsp;</p>
+            </td>
+            <td>
+            <p>contextual class danger adds specific red/pink background to table</p>
+            </td>
+            <td>
+            <pre>&lt;tr class="table-danger"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>table-light&nbsp;</p>
+            </td>
+            <td>
+            <p>contextual class secondary adds light (white) background to table</p>
+            </td>
+            <td>
+            <pre>&lt;tr class="table-light"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>table-dark</p>
+            </td>
+            <td>
+            <p>contextual class secondary adds dark (grey/black) background to table</p>
+            </td>
+            <td>
+            <pre>&lt;tr class="table-dark"&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div><div id="AdThrive_Content_4_desktop" class="adthrive-ad adthrive-content adthrive-content-4 adthrive-ad-cls" style="min-height: 250px;" data-google-query-id="CNfpmenyq4EDFQjWcwEd_cYDfg"><div id="google_ads_iframe_/18190176,22535388737/AdThrive_Content_4/638a1525d1a23b1b145263c4_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/18190176,22535388737/AdThrive_Content_4/638a1525d1a23b1b145263c4_0" name="google_ads_iframe_/18190176,22535388737/AdThrive_Content_4/638a1525d1a23b1b145263c4_0" title="3rd party ad content" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-load-complete="true" data-google-container-id="8"></iframe></div></div>
+            <h3 id="toasts">Toasts</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>toast</p>
+            </td>
+            <td>
+            <p>a quick alert box that appears only for a few seconds when any user event happens (button click, form submit etc…). contains of two parts – header and body</p>
+            </td>
+            <td>
+            <pre>&lt;div class="toast"&gt;<br> &nbsp;&lt;div class="toast-header"&gt;<br> &nbsp;&nbsp;&nbsp;The Header<br>&nbsp;&nbsp;&lt;/div&gt;</pre>
+            <pre> &nbsp;&lt;div class="toast-body"&gt;<br> &nbsp;&nbsp;&nbsp;The text for toast body<br> &nbsp;&lt;/div&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="tooltips">Tooltips</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>tooltip</p>
+            </td>
+            <td>
+            <p>small popup box that appears when user hovers the mouse over an element (moves the mouse lightly without clicking)</p>
+            </td>
+            <td>
+            <pre>&lt;a href="#" data-toggle="tooltip" data-placement="auto" title="Good day!"&gt;Thanks for hovering&lt;/a&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="typography">Typography</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>display-# (1-4)&nbsp;</p>
+            </td>
+            <td>
+            <p>display heading of different sizes from 1-4, with larger font size and crispier font weight than the normal headings</p>
+            </td>
+            <td>
+            <pre>&lt;h1 class="display-1"&gt;Display 1&lt;/h1&gt;<br>&lt;h1 class="display-2"&gt;Display 2&lt;/h1&gt;<br>&lt;h1 class="display-3"&gt;Display 3&lt;/h1&gt;<br>&lt;h1 class="display-4"&gt;Display 4&lt;/h1&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>lead&nbsp;</p>
+            </td>
+            <td>
+            <p>make a paragraph to stand out from others</p>
+            </td>
+            <td>
+            <pre>&lt;p class="lead"&gt;This paragraph stands out amongst others&lt;/p&gt;</pre>
+            <p>Result -&nbsp;</p>
+            <p>This paragraph stands out amongst others</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>blockquote&nbsp;</p>
+            </td>
+            <td>
+            <p>used to quote blocks of text from a different source</p>
+            </td>
+            <td>
+            <pre>&lt;blockquote class="blockquote"&gt;<br> &nbsp;&lt;p&gt;Lot of content&lt;/p&gt;<br>&lt;/blockquote&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>blockquote-footer&nbsp;</p>
+            </td>
+            <td>
+            <p>footer for the blockquote text</p>
+            </td>
+            <td>
+            <pre>&lt;footer class="blockquote-footer"&gt;Footer text&lt;/footer&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-unstyled&nbsp;</p>
+            </td>
+            <td>
+            <p>removes default list style and the left margin from the immediate child list items</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="list-unstyled"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>list-inline&nbsp;</p>
+            </td>
+            <td>
+            <p>place all the list items in a single line</p>
+            </td>
+            <td>
+            <pre>&lt;ul class="list-inline"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>dl-horizontal</p>
+            </td>
+            <td>
+            <p>definition list. Contains &lt;dt&gt; and &lt;dd&gt; elements. dl-horizontal makes terms and descriptions stand side-by-side</p>
+            </td>
+            <td>
+            <pre>&lt;dl class = "dl-horizontal"&gt;<br> &nbsp;&nbsp;&nbsp;&lt;dt&gt;Description&lt;/dt&gt;<br> &nbsp;&nbsp;&nbsp;&lt;dd&gt;Item&lt;/dd&gt;<br>&lt;/dl&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>mark</p>
+            </td>
+            <td>
+            <p>highlight a text with yellow background and some padding using mark element</p>
+            </td>
+            <td>
+            <pre>&lt;mark&gt;highlight text&lt;/mark&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>abbr</p>
+            </td>
+            <td>
+            <p>style the element with dotted border bottom</p>
+            </td>
+            <td>
+            <pre>&lt;abbr&gt;ABC&lt;/abbr&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>code</p>
+            </td>
+            <td>
+            <p>the code snippets are embedded in the code element.&nbsp;</p>
+            </td>
+            <td>
+            <pre>&lt;code&gt;span&lt;/code&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>kbd</p>
+            </td>
+            <td>
+            <p>display keyboard inputs with black background (with specific styling)</p>
+            </td>
+            <td>
+            <pre>&lt;kbd&gt;ctrl + c&lt;/kbd&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="utility-borders">Utility: Borders</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>border&nbsp;</p>
+            </td>
+            <td>
+            <p>to add border to a text</p>
+            </td>
+            <td>
+            <pre>&lt;span class="border border-dark"&gt;Hi there&lt;/span&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>border-*-0&nbsp;</p>
+            </td>
+            <td>
+            <p>border-0 represents no border. Variations – border-top-0 represents no border on top, same way bottom, right and left are possible</p>
+            </td>
+            <td>
+            <pre>&lt;span class="p-1 border border-primary border-0"&gt;I have no border&lt;/span&gt;<br><br>&lt;span class="p-1 border border-primary border-right-0"&gt;I have border on all sides except right&lt;/span&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>border-*&nbsp;</p>
+            </td>
+            <td>
+            <p>coloured border based on contextual classes. Possible values – primary, secondary, success, danger, warning, info, light, dark, white</p>
+            </td>
+            <td>
+            <pre>&lt;span class="border border-primary"&gt;I have blue border&lt;/span&gt;<br><br>&lt;span class="border border-success"&gt;I have green border&lt;/span&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>rounded&nbsp;</p>
+            </td>
+            <td>
+            <p>refers to rounded image border</p>
+            </td>
+            <td>
+            <pre>&lt;img class="rounded" src="/images/myimg.png"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>rounded-sm&nbsp;</p>
+            </td>
+            <td>
+            <p>small rounded edges</p>
+            </td>
+            <td>
+            <pre>&lt;img class="rounded-sm" src="/images/myimg.png"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>rounded-lg&nbsp;</p>
+            </td>
+            <td>
+            <p>large rounded edges</p>
+            </td>
+            <td>
+            <pre>&lt;img class="rounded-lg" src="/images/myimg.png"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>rounded-circle&nbsp;</p>
+            </td>
+            <td>
+            <p>rounded circular image</p>
+            </td>
+            <td>
+            <pre>&lt;img class="rounded-circle" src="/images/myimg.png"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>rounded-0&nbsp;&nbsp;</p>
+            </td>
+            <td>
+            <p>no rounding (sharp edges)</p>
+            </td>
+            <td>
+            <pre>&lt;img class="rounded-0" src="/images/myimg.png"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>rounded-*</p>
+            </td>
+            <td>
+            <p>rounded from 2 sides on left, right, top or bottom</p>
+            </td>
+            <td>
+            <pre>&lt;img class="rounded-top" src="/images/myimg.png"&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="utility-colors">Utility: Colors</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>bg-primary&nbsp;</p>
+            </td>
+            <td>
+            <p>use blue background</p>
+            </td>
+            <td>
+            <pre>&lt;div class="bg-primary text-white"&gt;text is white and background is blue&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>bg-secondary&nbsp;</p>
+            </td>
+            <td>
+            <p>use grey background</p>
+            </td>
+            <td>
+            <pre>&lt;div class="bg-secondary"&gt; background is grey&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>bg-success&nbsp;</p>
+            </td>
+            <td>
+            <p>use green background</p>
+            </td>
+            <td>
+            <pre>&lt;div class="bg-success"&gt; background is green&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>bg-info&nbsp;</p>
+            </td>
+            <td>
+            <p>use light blue background</p>
+            </td>
+            <td>
+            <pre>&lt;div class="bg-info"&gt; background is light blue&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>bg-warning&nbsp;</p>
+            </td>
+            <td>
+            <p>use yellow background</p>
+            </td>
+            <td>
+            <pre>&lt;div class="bg-warning"&gt; background is yellow&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>bg-danger&nbsp;</p>
+            </td>
+            <td>
+            <p>use red background</p>
+            </td>
+            <td>
+            <pre>&lt;div class="bg-danger"&gt; background is red&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>bg-light&nbsp;</p>
+            </td>
+            <td>
+            <p>use light (white or light grey) background</p>
+            </td>
+            <td>
+            <pre>&lt;div class="bg-light"&gt; background is white/light grey&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>bg-dark&nbsp;</p>
+            </td>
+            <td>
+            <p>use black (dark) background</p>
+            </td>
+            <td>
+            <pre>&lt;div class="bg-dark"&gt; background is black&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>bg-white&nbsp;</p>
+            </td>
+            <td>
+            <p>use white background</p>
+            </td>
+            <td>
+            <pre>&lt;div class="bg-white"&gt; background is white&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-*&nbsp;</p>
+            </td>
+            <td>
+            <p>use specific colors for the text. Values can be primary, secondary, success, info, warning, danger, light, dark, white</p>
+            </td>
+            <td>
+            <pre>&lt;p class="text-primary"&gt;Text color is blue&lt;/p&gt;<br><br>&lt;p class="text-success"&gt;Text color is greeen&lt;/p&gt;<br><br>...and so on</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="utility-display">Utility: Display</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>d-*-block&nbsp;</p>
+            </td>
+            <td>
+            <p>display block with specific styling</p>
+            </td>
+            <td>
+            <pre>&lt;span class="d-block bg-primary"&gt;display block&lt;/span&gt;<br><br>&lt;span class="d-sm-block bg-success"&gt;display small block&lt;/span&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>d-*-flex&nbsp;</p>
+            </td>
+            <td>
+            <p>display flex items with specific styling</p>
+            </td>
+            <td>
+            <pre>&lt;div class="d-flex bg-secondary"&gt;...&lt;/div&gt;<br><br>&lt;span class="d-md-flex bg-info"&gt;...&lt;/span&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>d-*-inline&nbsp;</p>
+            </td>
+            <td>
+            <p>inline display with specific styling</p>
+            </td>
+            <td>
+            <pre>&lt;div class="d-inline bg-secondary"&gt;...&lt;/div&gt;<br><br>&lt;div class="d-md-inline bg-info"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>d-*-inline-block&nbsp;</p>
+            </td>
+            <td>
+            <p>display inline block</p>
+            </td>
+            <td>
+            <pre>&lt;div class="d-inline-block bg-secondary"&gt;...&lt;/div&gt;<br><br>&lt;div class="d-lg-inline-block bg-info"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>d-*-inline-flex&nbsp;</p>
+            </td>
+            <td>
+            <p>styling for inline flex</p>
+            </td>
+            <td>
+            <pre>&lt;div class="d-inline-flex bg-secondary"&gt;...&lt;/div&gt;<br><br>&lt;div class="d-lg-inline-flex bg-info"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>d-*-none&nbsp;</p>
+            </td>
+            <td>
+            <p>hide display for certain element (same as display: none)</p>
+            </td>
+            <td>
+            <pre>&lt;div class="d-none"&gt;...&lt;/div&gt;<br><br>&lt;div class="d-lg-none"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>d-*-table&nbsp;</p>
+            </td>
+            <td>
+            <p>display styling for table</p>
+            </td>
+            <td>
+            <pre>&lt;div class="d-table"&gt;...&lt;/div&gt;<br><br>&lt;div class="d-lg-table"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>d-*-table-cell&nbsp;</p>
+            </td>
+            <td>
+            <p>styling for table cell</p>
+            </td>
+            <td>
+            <pre>&lt;div class="d-table-cell"&gt;...&lt;/div&gt;<br><br>&lt;div class="d-lg-table-cell"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>d-print-...</p>
+            </td>
+            <td>
+            <p>controls how elements have to be displayed while printing. Value can be none, block, inline, inline-block, table, table-row,table-cell, flex, inline-flex</p>
+            </td>
+            <td>
+            <pre>&lt;div class="d-print-block"&gt;Display content as block on print&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="utility-flexbox">Utility: Flexbox</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>flex-*-column&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>flex column to display content vertically (top to bottom). Responsive variations are sm,md,lg,xl</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex flex-column"&gt; &lt;!--default size--&gt;<br><br>&lt;div class="d-flex flex-sm-column"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>flex-*-column-reverse&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>reverse the order of display of columns</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex flex-column-reverse"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>flex-*-row&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>display content horizontally one after the other (side-by-side). Responsive variations are sm,md,lg,xl</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex flex-row"&gt;<br><br>&lt;div class="d-flex flex-md-row"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>flex-*-row-reverse&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>reverse the order of display of rows</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex flex-row-reverse"&gt;<br><br>&lt;div class="d-flex flex-lg-row-reverse"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>flex-*-nowrap&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>default setting to display text in the flex container</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex flex-nowrap"&gt;..&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>flex-*-wrap&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>add wrap functionality. Responsive variations – sm, ml, lg, xl</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex flex-wrap"&gt; ... &lt;/div&gt;<br><br>&lt;div class="d-flex flex-xl-wrap"&gt; ... &lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>flex-*-wrap-reverse&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>reverse order display.</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex flex-wrap-reverse"&gt; ... &lt;/div&gt;<br><br>&lt;div class="d-flex flex-xl-wrap-reverse"&gt; ... &lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>flex-fill&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>fill the background with different colors – primary, secondary, info etc…</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="p-2 flex-fill bg-*"&gt;Flex item&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>flex-*-grow-1&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>lets the specified element take the entire available space.</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="p-2 flex-grow-1 bg-primary"&gt;Flex grow&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>flex-*-grow-0&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>don’t let the items grow on different screens</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="p-2 flex-grow-0 bg-info"&gt;dont let me grow&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>flex-*-shrink-1&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>lets the item shrink</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="p-2 flex-shrink-1 bg-danger"&gt;Flex shrink&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>flex-*-shrink-0&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>no shrinking on different screens</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="p-2 flex-shrink-0 bg-primary"&gt;Flex no shrink&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>justify-content-*-start&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>change the alignment of the items (justify to left)</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex justify-content-start"&gt;<br><br>&lt;div class="d-flex justify-content-sm-start"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>justify-content-*-end&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>justify to the end (right)</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex justify-content-end"&gt;<br><br>&lt;div class="d-flex justify-content-sm-end"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>justify-content-*-center&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>center justify the items</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex justify-content-center"&gt;<br><br>&lt;div class="d-flex justify-content-sm-center"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>justify-content-*-between&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>justify between the items</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex justify-content-between"&gt;<br><br>&lt;div class="d-flex justify-content-sm-between"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>justify-content-*-around&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>justify space around the items</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex justify-content-around"&gt;<br><br>&lt;div class="d-flex justify-content-sm-around"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>align-content-*-start&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>control vertical alignment to start (default)</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex flex-wrap align-content-start"&gt;<br><br>&lt;div class="d-flex align-content-sm-start"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>align-content-*-end&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>align content to end</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex flex-wrap align-content-end"&gt;<br><br>&lt;div class="d-flex align-content-sm-end"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>align-content-*-center&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>align content to the center</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex flex-wrap align-content-center"&gt;<br><br>&lt;div class="d-flex align-content-sm-center"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>align-content-*-around&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>align space around items</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex flex-wrap align-content-around"&gt;<br><br>&lt;div class="d-flex align-content-sm-around"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>align-content-*-stretch&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>stretch individual flex box items</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex flex-wrap align-content-stretch"&gt;<br><br>&lt;div class="d-flex align-content-sm-stretch"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>align-items-*-baseline&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>align items with respect to baseline</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex flex-wrap align-items-baseline"&gt;<br><br>&lt;div class="d-flex align-items-sm-baseline"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>align-items-*-stretch&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>stretch items to full width of flex container</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="d-flex align-items-stretch"&gt;<br><br>&lt;div class="d-flex align-items-sm-stretch"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>align-self-*-start&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>self-align individual flex item to start (default)</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="align-self-start"&gt;flex item align&lt;/div&gt;<br><br>&lt;div class="align-self-md-start"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>align-self-*-end&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>self-align individual flex item to end</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="align-self-end"&gt;flex item align&lt;/div&gt;<br><br>&lt;div class="align-self-md-end"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>align-self-*-center&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>self-align individual flex item to center</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="align-self-center"&gt;flex item align&lt;/div&gt;<br><br>&lt;div class="align-self-md-center"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>align-self-*-baseline&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>self-align individual flex item to baseline</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="align-self-baseline"&gt;flex item align&lt;/div&gt;<br><br>&lt;div class="align-self-md-baseline"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>align-self-*-stretch&nbsp;</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>stretch to full width</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="align-self-stretch"&gt;flex item align&lt;/div&gt;<br><br>&lt;div class="align-self-md-stretch"&gt;...&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td style="width: 63.2188px;">
+            <p>order-*-#</p>
+            </td>
+            <td style="width: 87.2188px;">
+            <p>change the order of display of particular flex items from 0-12</p>
+            </td>
+            <td style="width: 531.219px;">
+            <pre>&lt;div class="order-12"&gt;first item&lt;/div&gt; &lt;!--will be displayed 12th--&gt;<br><br>&lt;div class="order-sm-3"&gt;ordered flex item&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div><div id="AdThrive_Content_5_desktop" class="adthrive-ad adthrive-content adthrive-content-5 adthrive-ad-cls" style="min-height: 250px;"><div id="google_ads_iframe_/18190176,22535388737/AdThrive_Content_5/638a1525d1a23b1b145263c4_0__container__" style="border: 0pt none;"></div></div>
+            <h3 id="utility-misc">Utility: Misc</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>close&nbsp;</p>
+            </td>
+            <td>
+            <p>to display close option</p>
+            </td>
+            <td>
+            <pre>&lt;button type="button" class="close"&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>embed-responsive&nbsp;</p>
+            </td>
+            <td>
+            <p>embed a responsive media of particular size</p>
+            </td>
+            <td>
+            <pre>&lt;div class="embed-responsive embed-responsive-24by16"&gt;<br> &nbsp;&lt;iframe class="embed-responsive-item" src="&lt;video link&gt;" allowfullscreen=""&gt;&lt;/iframe&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>shadow-none&nbsp;</p>
+            </td>
+            <td>
+            <p>background without shadow and with specific css styling properties</p>
+            </td>
+            <td>
+            <pre>&lt;div class="shadow-none p-2 mb-5 bg-dark rounded"&gt;No shadow&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>shadow-sm&nbsp;</p>
+            </td>
+            <td>
+            <p>small shadow&nbsp;</p>
+            </td>
+            <td>
+            <pre>&lt;div class="shadow-sm p-2 mb-5 bg-light rounded"&gt;Small Shadow&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>shadow&nbsp;</p>
+            </td>
+            <td>
+            <p>regular shadow option</p>
+            </td>
+            <td>
+            <pre>&lt;div class="shadow p-2 mb-5 bg-light rounded"&gt;Default shadow setting&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>shadow-lg&nbsp;</p>
+            </td>
+            <td>
+            <p>large shadow</p>
+            </td>
+            <td>
+            <pre>&lt;div class="shadow-lg p-2 mb-5 bg-white"&gt;Larger shadow&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>invisible&nbsp;</p>
+            </td>
+            <td>
+            <p>to mark an element as invisible</p>
+            </td>
+            <td>
+            <pre>&lt;div class="invisible"&gt;invisible element&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>visible&nbsp;</p>
+            </td>
+            <td>
+            <p>mark an element as visible</p>
+            </td>
+            <td>
+            <pre>&lt;div class="visible"&gt;visible element&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>sr-only&nbsp;</p>
+            </td>
+            <td>
+            <p>show a particular element on screen readers only</p>
+            </td>
+            <td>
+            <pre>&lt;span class="sr-only"&gt;Hide me everywhere except screen readers&lt;/span&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>stretched-link</p>
+            </td>
+            <td>
+            <p>make the containing block of a link clickable by using stretched-link. Can be used on card, media etc…</p>
+            </td>
+            <td>
+            <pre>&lt;a href="#" class="stretched-link"&gt;stretch the link to container&lt;/a&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="utility-positioning">Utility: Positioning</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>align-*&nbsp;</p>
+            </td>
+            <td>
+            <p>align at baseline, top, bottom, middle, text-top, text-bottom</p>
+            </td>
+            <td>
+            <pre>example –<br><br>&lt;span class="align-middle"&gt;middle&lt;/span&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>clearfix&nbsp;</p>
+            </td>
+            <td>
+            <p>used to clear floats left and right. Used when the screen is wide or small</p>
+            </td>
+            <td>
+            <pre>&lt;div class="clearfix"&gt;<br> &nbsp;&lt;span class="float-left"&gt;leftFloat&lt;/span&gt;<br> &nbsp;&lt;span class="float-right"&gt;rightFloat&lt;/span&gt;<br>&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>fixed-top&nbsp;</p>
+            </td>
+            <td>
+            <p>make any element stay on the top of the page independent of scrolling</p>
+            </td>
+            <td>
+            <pre>&lt;nav class="fixed-top"&gt;Fixed on page top&lt;/nav&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>fixed-bottom&nbsp;</p>
+            </td>
+            <td>
+            <p>make any element stay on the bottom of the page independent of scrolling</p>
+            </td>
+            <td>
+            <pre>&lt;nav class="fixed-bottom"&gt;Fixed on page bottom&lt;/nav&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>sticky-top&nbsp;</p>
+            </td>
+            <td>
+            <p>can be anywhere on the page, but when scrolled past, stays at top of the page</p>
+            </td>
+            <td>
+            <pre>&lt;div class="sticky-top"&gt;Sticks on top&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>float-*-left&nbsp;</p>
+            </td>
+            <td>
+            <p>float left on the screen; * can be sm, md, lg, xl</p>
+            </td>
+            <td>
+            <pre>&lt;div class="float-sm-left"&gt;Float left on views small or wider&lt;/div&gt;<br><br>&lt;div class="float-left"&gt;Float left on all view sizes&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>float-*-right&nbsp;</p>
+            </td>
+            <td>
+            <p>float right on the screen; * can be sm, md, lg, xl</p>
+            </td>
+            <td>
+            <pre>&lt;div class="float-md-right"&gt;Float right on views small or wider&lt;/div&gt;<br><br>&lt;div class="float-right"&gt;Float right on all view sizes&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>float-*-none</p>
+            </td>
+            <td>
+            <p>no floating for the particular viewport</p>
+            </td>
+            <td>
+            <pre>&lt;div class="float-lg-none"&gt;no float on views small or wider&lt;/div&gt;<br><br>&lt;div class="float-none"&gt; no float on any view sizes&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="utility-sizing">Utility: Sizing</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>w-*&nbsp;</p>
+            </td>
+            <td>
+            <p>specified width of a div tag; can be any percentage upto 100%</p>
+            </td>
+            <td>
+            <pre>&lt;div class="w-25 p-3" style="background-color: blue"&gt;Width 25% and size 3&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>h-*&nbsp;</p>
+            </td>
+            <td>
+            <p>customized height for div tag</p>
+            </td>
+            <td>
+            <pre>&lt;div class="h-50 d-inline-block" style="background-color: red"&gt;Height is 50%&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>mw-*&nbsp;</p>
+            </td>
+            <td>
+            <p>maximum width</p>
+            </td>
+            <td>
+            <pre>&lt;div class="mw-100 bg-success"&gt;Max Width 100%&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>mh-*</p>
+            </td>
+            <td>
+            <p>maximum height</p>
+            </td>
+            <td>
+            <pre>&lt;div class="mw-75 bg-success"&gt;Max height 75%&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="utility-spacing">Utility: Spacing</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>m-1 / m-*-#&nbsp;</p>
+            </td>
+            <td>
+            <p>spaced div tags with margin on all sides; star ranges from 0 space to 6 spaces</p>
+            </td>
+            <td>
+            <pre>&lt;div class="m-4 bg-success d-inline-block"&gt;div with 4 spaces&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>mt-1 / mt-*-#&nbsp;</p>
+            </td>
+            <td>
+            <p>margin on top</p>
+            </td>
+            <td>
+            <pre>&lt;div class="mt-3 bg-warning d-inline-block"&gt;Spaced top margin&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>mr-1 / mr-*-#&nbsp;</p>
+            </td>
+            <td>
+            <p>margin on right</p>
+            </td>
+            <td>
+            <pre>&lt;div class="mr-3 bg-warning d-inline-block"&gt;Spaced right margin&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>mb-1 / mb-*-#&nbsp;</p>
+            </td>
+            <td>
+            <p>bottom margin</p>
+            </td>
+            <td>
+            <pre>&lt;div class="mb-3 bg-warning d-inline-block"&gt;Spaced bottom margin&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>ml-1 / ml-*-#&nbsp;</p>
+            </td>
+            <td>
+            <p>left margin</p>
+            </td>
+            <td>
+            <pre>&lt;div class="ml-3 bg-warning d-inline-block"&gt;Spaced left margin&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>mx-1 / mx-*-#&nbsp;</p>
+            </td>
+            <td>
+            <p>left and right (x-axis) margin</p>
+            </td>
+            <td>
+            <pre>&lt;div class="mx-3 bg-primary d-inline-block"&gt;Spaced x axis margin&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>my-1 / my-*-#&nbsp;</p>
+            </td>
+            <td>
+            <p>top and bottom (y-axis) margin</p>
+            </td>
+            <td>
+            <pre>&lt;div class="my-3 bg-primary d-inline-block"&gt;Spaced y axis margin&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>m-n1 / m-*-n#&nbsp;</p>
+            </td>
+            <td>
+            <p>negative spacing (change of direction) – can be any of the above – left, right, top, bottom, x, y</p>
+            </td>
+            <td>
+            <pre>&lt;div class="m-n5 bg-primary d-inline-block"&gt;Negative spacing&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>p-1 / p-*-#&nbsp;</p>
+            </td>
+            <td>
+            <p>padding on all sides</p>
+            </td>
+            <td>
+            <pre>&lt;div class="p-3 bg-danger d-inline-block"&gt;Padding on all sides with box size 3&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>pt-1 / pt-*-#&nbsp;</p>
+            </td>
+            <td>
+            <p>padding on top</p>
+            </td>
+            <td>
+            <pre>&lt;div class="pt-3 bg-danger d-inline-block"&gt;Padding on top with box size 3&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>pr-1 / pr-*-#&nbsp;</p>
+            </td>
+            <td>
+            <p>padding on right</p>
+            </td>
+            <td>
+            <pre>&lt;div class="pr-3 bg-danger d-inline-block"&gt;Padding on right with box size 3&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>pb-1 / pb-*-#&nbsp;</p>
+            </td>
+            <td>
+            <p>padding on bottom</p>
+            </td>
+            <td>
+            <pre>&lt;div class="pb-3 bg-danger d-inline-block"&gt;Padding on bottom with box size 3&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>pl-1 / pl-*-#&nbsp;</p>
+            </td>
+            <td>
+            <p>padding on left</p>
+            </td>
+            <td>
+            <pre>&lt;div class="pl-3 bg-danger d-inline-block"&gt;Padding on left with box size 3&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>px-1 / px-*-#&nbsp;</p>
+            </td>
+            <td>
+            <p>padding on left and right (x-axis)</p>
+            </td>
+            <td>
+            <pre>&lt;div class="px-3 bg-danger d-inline-block"&gt;Padding on left and right with box size 3&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>py-1 / py-*-#</p>
+            </td>
+            <td>
+            <p>padding on top and bottom (y-axis)</p>
+            </td>
+            <td>
+            <pre>&lt;div class="py-3 bg-danger d-inline-block"&gt;Padding on top and bottom with box size 3&lt;/div&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div>
+            <h3 id="utility-text">Utility: Text</h3>
+            <div style="overflow-x:auto;"><table>
+            <tbody>
+            <tr>
+            <td>
+            <p>font-weight-bold&nbsp;</p>
+            </td>
+            <td>
+            <p>to write text in bold</p>
+            </td>
+            <td>
+            <pre>&lt;p class="font-weight-bold"&gt;Text in bold&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>font-weight-bolder&nbsp;</p>
+            </td>
+            <td>
+            <p>bolder than bold</p>
+            </td>
+            <td>
+            <pre>&lt;p class="font-weight-bolder"&gt;Bolder text&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>font-weight-light&nbsp;</p>
+            </td>
+            <td>
+            <p>light text, lighter than the normal text weight</p>
+            </td>
+            <td>
+            <pre>&lt;p class="font-weight-light"&gt;Light text&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>font-weight-lighter&nbsp;</p>
+            </td>
+            <td>
+            <p>lighter than light text weight</p>
+            </td>
+            <td>
+            <pre>&lt;p class="font-weight-lighter"&gt;Lighter than light&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>font-weight-normal&nbsp;</p>
+            </td>
+            <td>
+            <p>normal text</p>
+            </td>
+            <td>
+            <pre>&lt;p class="font-weight-normal"&gt;Normal weight &lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-decoration-none&nbsp;</p>
+            </td>
+            <td>
+            <p>no text decoration</p>
+            </td>
+            <td>
+            <pre>&lt;p class="text-decoration-none"&gt;No decorations on text&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>font-italic&nbsp;</p>
+            </td>
+            <td>
+            <p>text in <em>italic&nbsp;</em></p>
+            </td>
+            <td>
+            <pre>&lt;p class="font-italic"&gt;Italic text (Ctrl+i) in word&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-monospace&nbsp;</p>
+            </td>
+            <td>
+            <p>text in monospace</p>
+            </td>
+            <td>
+            <pre>&lt;p class="text-monospace"&gt;monospace text&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-justify&nbsp;</p>
+            </td>
+            <td>
+            <p>justified text; justify can be left, right, center</p>
+            </td>
+            <td>
+            <pre>&lt;p class="text-justify"&gt;This is a justified text&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-nowrap&nbsp;</p>
+            </td>
+            <td>
+            <p>text without word wrapping</p>
+            </td>
+            <td>
+            <pre>&lt;p class="text-nowrap"&gt;No wrapping&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-*-left&nbsp;</p>
+            </td>
+            <td>
+            <p>text-sm-left, text-md-left, text-lg-left, text-xl-left</p>
+            <p>where sm = small, md= medium, lg = large, xl = extra large</p>
+            </td>
+            <td>
+            <pre>&lt;p class="text-sm-left"&gt;Left align text on viewports that are SM (small) or wider.&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-*-right&nbsp;</p>
+            </td>
+            <td>
+            <p>text-sm- right, text-md- right, text-lg- right, text-xl- right</p>
+            <p>where sm = small, md= medium, lg = large, xl = extra large</p>
+            </td>
+            <td>
+            <pre>&lt;p class="text-md-right"&gt;right align text on viewports that are md (medium) or wider.&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-*-center&nbsp;</p>
+            </td>
+            <td>
+            <p>text-sm- center, text-md- center, text-lg- center, text-xl- center</p>
+            <p>where sm = small, md= medium, lg = large, xl = extra large</p>
+            </td>
+            <td>
+            <pre>&lt;p class="text-lg-center"&gt;center align text on viewports that are lg (large) or wider.&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-lowercase&nbsp;</p>
+            </td>
+            <td>
+            <p>lowercase letters</p>
+            </td>
+            <td>
+            <pre>&lt;p class="text-lowercase"&gt;text in lowercase&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-uppercase&nbsp;</p>
+            </td>
+            <td>
+            <p>uppercase letters</p>
+            </td>
+            <td>
+            <pre>&lt;p class="text- uppercase"&gt;text in uppercase &lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-capitalize&nbsp;</p>
+            </td>
+            <td>
+            <p>Capitalize Each Word in the comprising text</p>
+            </td>
+            <td>
+            <pre>&lt;p class="text-capitalize"&gt;capitalized each word&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-truncate&nbsp;</p>
+            </td>
+            <td>
+            <p>truncate the comprising text with an ellipsis at block or inline level</p>
+            </td>
+            <td>
+            <pre>&lt;p class="text-truncate"&gt;truncate this text while displaying because its long&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-body&nbsp;</p>
+            </td>
+            <td>
+            <p>display text in default settings</p>
+            </td>
+            <td>
+            <pre>&lt;p class="text-body"&gt;Default way of displaying text&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-black-50&nbsp;</p>
+            </td>
+            <td>
+            <p>lighter than normal text (50% opaque black).&nbsp;</p>
+            </td>
+            <td>
+            <pre>&lt;p class="text-black-50"&gt;Text that's 50% opaque&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-white-50&nbsp;</p>
+            </td>
+            <td>
+            <p>white text that is 50% opaque in appearance</p>
+            </td>
+            <td>
+            <pre>&lt;p class="text-white-50"&gt;Text that's 50% opaque white&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-muted&nbsp;</p>
+            </td>
+            <td>
+            <p>contextual class to display muted text.</p>
+            <pre>&lt;p class="text-muted"&gt;Muted text.&lt;/p&gt;<br><br>&lt;a href="#" class="text-muted"&gt;Muted link.&lt;/a&gt;</pre>
+            </td>
+            <td>
+            <p>Muted text.&nbsp;</p>
+            <p>Muted link.</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-hide&nbsp;</p>
+            </td>
+            <td>
+            <p>Swap the text of heading tags with a background image&nbsp;</p>
+            </td>
+            <td>
+            <pre>&lt;h1 class="text-hide"&gt;Hide this text and show background image&lt;/h1&gt;</pre>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p>text-break</p>
+            </td>
+            <td>
+            <p>set overflow wrap so that long text doesn’t break the layout of a component</p>
+            </td>
+            <td>
+            <pre>&lt;p class="text-break"&gt;very very long text, that needs to be wrapped to maintain alignment&lt;/p&gt;</pre>
+            </td>
+            </tr>
+            </tbody>
+            </table></div><div id="AdThrive_Content_6_desktop" class="adthrive-ad adthrive-content adthrive-content-6 adthrive-ad-cls" style="min-height: 250px;" data-google-query-id="CN_Rlevyq4EDFamy2AUdX4ED9w"><div id="google_ads_iframe_/18190176,22535388737/AdThrive_Content_6/638a1525d1a23b1b145263c4_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/18190176,22535388737/AdThrive_Content_6/638a1525d1a23b1b145263c4_0" name="google_ads_iframe_/18190176,22535388737/AdThrive_Content_6/638a1525d1a23b1b145263c4_0" title="3rd party ad content" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" style="border: 0px; vertical-align: bottom;" data-load-complete="true" data-google-container-id="9"></iframe></div></div>
+            <p><strong>People are also reading:</strong></p>
+            <!-- <ul>
+            <li><a href="https://hackr.io/blog/top-bootstrap-alternatives">Bootstrap Alternatives</a></li>
+            <li><a href="https://hackr.io/blog/bootstrap-interview-questions">Bootstrap Interview Questions</a></li>
+            <li><a href="https://hackr.io/blog/best-javascript-certification">Javascript Certification</a></li>
+            <li><a href="https://hackr.io/blog/best-javascript-courses">Javascript Courses</a></li>
+            <li><a href="https://hackr.io/blog/javascript-books">Javascript Books</a></li>
+            <li><a href="https://hackr.io/blog/top-javascript-libraries">Javascript Libraries</a></li>
+            <li><a href="https://hackr.io/blog/best-css-editor">Best CSS Editor</a></li>
+            <li><a href="https://hackr.io/blog/css-interview-questions">CSS Interview Questions</a></li>
+            <li><a href="https://hackr.io/blog/types-of-css">Types of CSS</a></li>
+            <li><a href="https://hackr.io/blog/web-development-frameworks">Top Web Development Frameworks</a></li>
+            </ul> -->
+            <p></p>
+            
+            
+             </article>
+
+
+             <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    </div>
+</body>
+</html>

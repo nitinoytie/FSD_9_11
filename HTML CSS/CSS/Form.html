@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form{
+            width: 40%;
+            height: 600px;
+            font-size: 24px;
+            border-radius: 12px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: #7b7b7b6c;
+        }
+        .form input,.form select{
+            font-size: 24px;
+            padding: 3px 10px;
+            border-radius: 8px;
+        }
+        input[type="radio"]{
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+   <div class="flexbox formout">
+    <form action="search" method="" class="form flexbox">
+        <input type="text" name="first_name" placeholder="First Name">
+        <input type="text" name="last_name" placeholder="Last Name">
+        <input type="text" name="id" value="123" hidden>
+
+        <div>
+            <label for="">Dob: </label><input type="date">
+        </div>
+        <fieldset>
+            <legend>Gender</legend>
+            <label for="">Male</label><input type="radio" name="gen">
+            <label for="">Female</label><input type="radio" name="gen">
+        </fieldset>
+
+        <select name="" id="">
+            <option value="" disabled selected>Select States</option>
+            <option value="">Maharashtra</option>
+            <option value="">Karnataka</option>
+            <option value="">Gujrat</option>
+            <option value="">Panjab</option>
+        </select>
+
+
+
+        <input type="submit" value="SignUp">
+    </form>
+   </div>
+</body>
+</html>

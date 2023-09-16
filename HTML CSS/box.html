@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexbox{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .container{
+            width: 100%;
+            height: 400px;
+            background-color: brown;
+        }
+        .items{
+            width: 20%;
+            height: 300px;
+            background-color: aqua;
+            border: 3px solid black;
+            border-radius: 12px;
+            background-position: center;
+            background-size: cover;   
+          }
+        
+.box1{
+    background-image: url("img/flowers-276014_640.jpg"); 
+   
+}
+.box2{
+    background-image: url("img/istockphoto-1146517111-612x612.jpg"); 
+}
+.box3{
+    background-image: url("img/pexels-pixabay-268533.jpg");
+}
+.backimg{
+    background-image: url("https://img.freepik.com/premium-photo/dark-blue-background-with-flowers-grass_777078-10947.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.info{
+    text-align: center;
+    background: none;
+    color: white;
+    border: none;
+}
+.info h1{
+    font-size: 30px;
+}
+.info p{
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container flexbox">
+        <div class="items box1"></div>
+        <div class="items box2"></div>
+        <div class="items box3"></div>
+    </div>
+    <div class="container flexbox backimg">
+       
+        <div class="items box2"></div>
+        <div class="items info">
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione voluptatem dolorum, inventore temporibus cum obcaecati quis unde dolorem perspiciatis voluptatum minima quidem maxime. Harum qui corporis, minima fuga eius impedit?</p>
+        </div>
+    </div>
+    <div class="container flexbox">
+        <div class="items box1"></div>
+        <div class="items box2"></div>
+        <div class="items box3"></div>
+    </div>
+</body>
+</html>

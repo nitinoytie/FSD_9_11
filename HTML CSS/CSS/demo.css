@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.flexbox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.headerout{
+    width: 100%;
+    height: 100px;
+    background-color: #892be232;
+    /* border-bottom: 1px solid black; */
+    box-shadow: 2px 0px 4px black;
+}
+.navleft{
+    width: 25%;
+}
+.navright{
+    width: 60%;
+}
+.navright li{
+    list-style: none;
+}
+.navright a{
+    font-size: 24px;
+    color: white;
+}
+.sec1out{
+    width: 100%;
+    height: 650px;
+    background-image: url("https://www.educationunlimited.com/blog/wp-content/uploads/2019/08/Webp.net-compress-image.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.742);
+}
+.cen{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cenbox{
+    width: 30%;
+    background: rgb(133, 94, 162);
+    background: radial-gradient(circle, #715c7db4 0%, #5c2580ac 100%);
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 3px 7px black;
+}
+.sec2out{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: white;
+    background-image: url("https://wallpapers.com/images/hd/maldives-and-sea-holiday-hd-iyidzfb55r4ajji4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.left,.right{
+    width: 40%;
+    height: 440px;
+}
+.left{
+    justify-content: center;
+}
+.sec2cen{
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 3px solid black;
+    width: 380px;
+    height: 380px;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+.blur{
+    width: 100%;
+    height: 500px;
+    backdrop-filter: blur(3px);
+    /* backdrop-filter: grayscale(100%); */
+}
+.box{
+    width: 140px;
+    height: 140px;
+    border: 2px solid #0151ac;
+}
+.box img{
+    width: 140px;
+    height: 140px;
+}
+.right{
+
+}
+.right p{
+    font-size: 20px;
+}
+.box a{
+    background-color: #0151ac;
+    border-radius: 12px;
+    padding: 4px 8px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.out1{
+    height: 400px;
+    background-color: blueviolet;
+}
+.right span{
+  
+    font-size: 30px;
+}
+.foot{
+    width: 100%;
+    height: 400px;
+    background-color: blueviolet;
+    flex-wrap: wrap;
+}
+
+.subfoot1,.subfoot2{
+    width: 100%;
+}
+.subfoot1{
+    position: relative;
+    height: 100px;
+    /* border: 2px solid black; */
+}
+.subfoot2{
+    text-align: center;
+    height: 280px;
+    /* border: 2px solid black; */
+}
+.footcen{
+    width: 90%;
+    border-bottom: 2px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footbox i{
+    color: white;
+}
+
+.footbox li{
+    list-style: none;
+    padding: 6px 5px;
+}
+.footbox h1{
+    font-size: 26px;
+    color: #c9c9c9ce;
+}
+.footbox a{
+    font-size: 22px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+@media (max-width:990px) {
+    .blur,.sec2out{
+        flex-direction: column;
+        height: 800px;
+        padding: 20px 0;
+    }
+    .sec2out .left{
+        width: 80%;
+    }
+    .sec2out .right{
+        width: 80%;
+    }
+}
+@media (max-width:780px) {
+    .cenbox{
+        width: 50%;
+    }
+    .navright{
+        display: none;
+    }
+}
